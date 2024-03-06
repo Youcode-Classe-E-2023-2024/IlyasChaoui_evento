@@ -15,10 +15,18 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('email')->unique();
+            $table->string('picture');
+            $table->string('phoneNumber');
+            $table->bigInteger('city_id');
+            $table->enum('role', ['user','organiser']);
             $table->timestamp('email_verified_at')->nullable();
+            $table->string('google_id')->nullable();
             $table->string('password');
             $table->rememberToken();
             $table->timestamps();
+
+            // foreign keys
+            $table->foreign('city_id')->references('id')->on('cities')->onDelete('cascade');
         });
     }
 
