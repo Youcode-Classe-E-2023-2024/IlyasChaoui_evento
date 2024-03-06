@@ -1,7 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="63c2625c-aa74-4be5-98d1-6577e619f40b" name="Changes" comment="" />
+    <list default="true" id="63c2625c-aa74-4be5-98d1-6577e619f40b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/IlyasChaoui_evento/public/assets/css/animate.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IlyasChaoui_evento/public/assets/css/parallax.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IlyasChaoui_evento/public/assets/css/swiper-bundle.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IlyasChaoui_evento/public/assets/css/tailwind.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IlyasChaoui_evento/public/assets/images/404.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IlyasChaoui_evento/public/assets/images/about/about-image-01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IlyasChaoui_evento/public/assets/images/about/about-image-02.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IlyasChaoui_evento/public/assets/images/blog/article-author-01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IlyasChaoui_evento/public/assets/images/blog/article-author-02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IlyasChaoui_evento/public/assets/images/blog/article-author-03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IlyasChaoui_evento/public/assets/images/blog/article-author-04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IlyasChaoui_evento/public/assets/images/blog/author-01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IlyasChaoui_evento/public/assets/images/blog/bannder-ad.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IlyasChaoui_evento/public/assets/images/blog/blog-01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IlyasChaoui_evento/public/assets/images/blog/blog-02.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IlyasChaoui_evento/public/assets/images/blog/blog-03.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IlyasChaoui_evento/public/assets/images/blog/blog-details-01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IlyasChaoui_evento/public/assets/images/blog/blog-footer-01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IlyasChaoui_evento/public/assets/images/blog/blog-footer-02.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IlyasChaoui_evento/public/assets/images/blog/dotted-shape.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IlyasChaoui_evento/public/assets/images/blog/quote-bg.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IlyasChaoui_evento/public/assets/images/brands/ayroui-white.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IlyasChaoui_evento/public/assets/images/brands/ayroui.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IlyasChaoui_evento/public/assets/images/brands/graygrids-white.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IlyasChaoui_evento/public/assets/images/brands/graygrids.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IlyasChaoui_evento/public/assets/images/brands/lineicons-white.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IlyasChaoui_evento/public/assets/images/brands/lineicons.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IlyasChaoui_evento/public/assets/images/brands/tailgrids-white.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IlyasChaoui_evento/public/assets/images/brands/tailgrids.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IlyasChaoui_evento/public/assets/images/brands/uideck-white.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IlyasChaoui_evento/public/assets/images/brands/uideck.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IlyasChaoui_evento/public/assets/images/favicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IlyasChaoui_evento/public/assets/images/footer/shape-1.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IlyasChaoui_evento/public/assets/images/footer/shape-3.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IlyasChaoui_evento/public/assets/images/header/bushes.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IlyasChaoui_evento/public/assets/images/header/concert.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IlyasChaoui_evento/public/assets/images/header/people1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IlyasChaoui_evento/public/assets/images/header/people2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IlyasChaoui_evento/public/assets/images/header/people3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IlyasChaoui_evento/public/assets/images/header/sky.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IlyasChaoui_evento/public/assets/images/header/water.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IlyasChaoui_evento/public/assets/images/hero/brand.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IlyasChaoui_evento/public/assets/images/hero/hero-image.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IlyasChaoui_evento/public/assets/images/logo/darkLogo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IlyasChaoui_evento/public/assets/images/logo/favicon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IlyasChaoui_evento/public/assets/images/logo/homeLogo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IlyasChaoui_evento/public/assets/images/logo/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IlyasChaoui_evento/public/assets/images/logo/photo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IlyasChaoui_evento/public/assets/images/team/dotted-shape.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IlyasChaoui_evento/public/assets/images/team/shape-2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IlyasChaoui_evento/public/assets/images/team/team-01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IlyasChaoui_evento/public/assets/images/team/team-02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IlyasChaoui_evento/public/assets/images/team/team-03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IlyasChaoui_evento/public/assets/images/team/team-04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IlyasChaoui_evento/public/assets/images/testimonials/author-01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IlyasChaoui_evento/public/assets/images/testimonials/author-02.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IlyasChaoui_evento/public/assets/images/testimonials/author-03.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IlyasChaoui_evento/public/assets/images/testimonials/icon-star.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IlyasChaoui_evento/public/assets/js/image-register.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IlyasChaoui_evento/public/assets/js/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IlyasChaoui_evento/public/assets/js/swiper-bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IlyasChaoui_evento/public/assets/js/wow.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IlyasChaoui_evento/resources/views/Layouts/homeLayout.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IlyasChaoui_evento/resources/views/authentication/authentication.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IlyasChaoui_evento/resources/views/homePage.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IlyasChaoui_evento/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/IlyasChaoui_evento/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IlyasChaoui_evento/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/IlyasChaoui_evento/app/Providers/RouteServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IlyasChaoui_evento/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/IlyasChaoui_evento/config/database.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IlyasChaoui_evento/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/IlyasChaoui_evento/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IlyasChaoui_evento/resources/views/welcome.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/IlyasChaoui_evento/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/IlyasChaoui_evento/routes/web.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -9,6 +82,14 @@
   </component>
   <component name="ComposerSettings">
     <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -21,15 +102,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/xampp/htdocs/Laravel project/Team-K-news_aggregator&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/xampp/htdocs/Laravel project/IlyasChaoui_evento/IlyasChaoui_evento/public/assets/images/logo",
+    "list.type.of.created.stylesheet": "CSS",
+    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\Laravel project\IlyasChaoui_evento\IlyasChaoui_evento\public\assets\images\logo" />
+      <recent name="C:\xampp\htdocs\Laravel project\IlyasChaoui_evento\IlyasChaoui_evento\public\assets\images\header" />
+      <recent name="C:\xampp\htdocs\Laravel project\IlyasChaoui_evento\IlyasChaoui_evento\public" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\Laravel project\IlyasChaoui_evento\IlyasChaoui_evento\app\Http\Controllers\Auth" />
+      <recent name="C:\xampp\htdocs\Laravel project\IlyasChaoui_evento\IlyasChaoui_evento\resources\views\components\forms" />
+      <recent name="C:\xampp\htdocs\Laravel project\IlyasChaoui_evento\IlyasChaoui_evento\resources\views\components\navbar" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -39,11 +134,22 @@
       <option name="presentableId" value="Default" />
       <updated>1709545601491</updated>
       <workItem from="1709545603571" duration="362000" />
-      <workItem from="1709637258014" duration="1134000" />
+      <workItem from="1709637258014" duration="28364000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
