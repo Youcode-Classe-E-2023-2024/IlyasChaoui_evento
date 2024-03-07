@@ -1,49 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="ChangeListManager">
-    <list default="true" id="63c2625c-aa74-4be5-98d1-6577e619f40b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/IlyasChaoui_evento/config/media-library.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IlyasChaoui_evento/public/assets/css/alert.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IlyasChaoui_evento/public/assets/css/toogleButton.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IlyasChaoui_evento/public/assets/js/countDown.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IlyasChaoui_evento/resources/views/dashboardPage.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/IlyasChaoui_evento.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/IlyasChaoui_evento.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IlyasChaoui_evento/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/IlyasChaoui_evento/app/Http/Controllers/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IlyasChaoui_evento/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/IlyasChaoui_evento/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IlyasChaoui_evento/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/IlyasChaoui_evento/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IlyasChaoui_evento/resources/views/Layouts/homeLayout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/IlyasChaoui_evento/resources/views/Layouts/homeLayout.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IlyasChaoui_evento/resources/views/components/forms/login-form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/IlyasChaoui_evento/resources/views/components/forms/login-form.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IlyasChaoui_evento/resources/views/components/forms/register-form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/IlyasChaoui_evento/resources/views/components/forms/register-form.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IlyasChaoui_evento/resources/views/components/navbar/authentication-navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/IlyasChaoui_evento/resources/views/components/navbar/authentication-navbar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IlyasChaoui_evento/resources/views/components/navbar/home-navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/IlyasChaoui_evento/resources/views/components/navbar/home-navbar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IlyasChaoui_evento/resources/views/homePage.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/IlyasChaoui_evento/resources/views/homePage.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IlyasChaoui_evento/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/IlyasChaoui_evento/routes/web.php" afterDir="false" />
-    </list>
-    <option name="SHOW_DIALOG" value="false" />
-    <option name="HIGHLIGHT_CONFLICTS" value="true" />
-    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
-    <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
-    <pharConfigPath>$PROJECT_DIR$/IlyasChaoui_evento/composer.json</pharConfigPath>
-    <execution />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="JavaScript File" />
-        <option value="CSS File" />
-      </list>
-    </option>
-  </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="MarkdownSettingsMigration">
-    <option name="stateVersion" value="1" />
-  </component>
-  <component name="PhpWorkspaceProjectConfiguration">
+  <component name="PhpIncludePathManager">
     <include_path>
       <path value="$PROJECT_DIR$/IlyasChaoui_evento/vendor/dflydev/dot-access-data" />
       <path value="$PROJECT_DIR$/IlyasChaoui_evento/vendor/vlucas/phpdotenv" />
@@ -165,62 +122,10 @@
       <path value="$PROJECT_DIR$/IlyasChaoui_evento/vendor/spatie/image-optimizer" />
     </include_path>
   </component>
-  <component name="ProjectId" id="2dDbShooajPgVGYFBvgzWPLhCrQ" />
-  <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showLibraryContents" value="true" />
-  </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/xampp/htdocs/Laravel project/IlyasChaoui_evento/IlyasChaoui_evento/public/assets/images/logo&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
-  }
-}</component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\Laravel project\IlyasChaoui_evento\IlyasChaoui_evento\public\assets\images\logo" />
-      <recent name="C:\xampp\htdocs\Laravel project\IlyasChaoui_evento\IlyasChaoui_evento\public\assets\images\header" />
-      <recent name="C:\xampp\htdocs\Laravel project\IlyasChaoui_evento\IlyasChaoui_evento\public" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\Laravel project\IlyasChaoui_evento\IlyasChaoui_evento\public" />
-      <recent name="C:\xampp\htdocs\Laravel project\IlyasChaoui_evento\IlyasChaoui_evento\public\assets\css" />
-      <recent name="C:\xampp\htdocs\Laravel project\IlyasChaoui_evento\IlyasChaoui_evento\app\Http\Controllers\Auth" />
-      <recent name="C:\xampp\htdocs\Laravel project\IlyasChaoui_evento\IlyasChaoui_evento\resources\views\components\forms" />
-      <recent name="C:\xampp\htdocs\Laravel project\IlyasChaoui_evento\IlyasChaoui_evento\resources\views\components\navbar" />
-    </key>
-  </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
-  <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="63c2625c-aa74-4be5-98d1-6577e619f40b" name="Changes" comment="" />
-      <created>1709545601491</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1709545601491</updated>
-      <workItem from="1709545603571" duration="362000" />
-      <workItem from="1709637258014" duration="35209000" />
-      <workItem from="1709758419708" duration="18836000" />
-    </task>
-    <servers />
-  </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
+  <component name="PhpProjectSharedConfiguration" php_language_level="8.1" />
+  <component name="PhpUnit">
+    <phpunit_settings>
+      <PhpUnitSettings custom_loader_path="$PROJECT_DIR$/IlyasChaoui_evento/vendor/autoload.php" />
+    </phpunit_settings>
   </component>
 </project>

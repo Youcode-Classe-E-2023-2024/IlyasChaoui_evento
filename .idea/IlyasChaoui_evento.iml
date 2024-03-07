@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="WEB_MODULE" version="4">
   <component name="NewModuleRootManager">
-    <content url="file://$MODULE_DIR$" />
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/IlyasChaoui_evento/vendor/spatie/laravel-medialibrary" />
+      <excludeFolder url="file://$MODULE_DIR$/IlyasChaoui_evento/vendor/spatie/temporary-directory" />
+      <excludeFolder url="file://$MODULE_DIR$/IlyasChaoui_evento/vendor/spatie/image" />
+      <excludeFolder url="file://$MODULE_DIR$/IlyasChaoui_evento/vendor/maennchen/zipstream-php" />
+      <excludeFolder url="file://$MODULE_DIR$/IlyasChaoui_evento/vendor/spatie/laravel-package-tools" />
+      <excludeFolder url="file://$MODULE_DIR$/IlyasChaoui_evento/vendor/spatie/image-optimizer" />
+    </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
