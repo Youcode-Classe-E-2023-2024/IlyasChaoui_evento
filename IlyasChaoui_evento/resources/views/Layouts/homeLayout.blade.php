@@ -7,11 +7,15 @@
     <title>Evento | @yield('title')</title>
     <link rel="shortcut icon" href="{{ asset('assets/images/favicon.png') }}" type="image/x-icon"/>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="{{ asset('assets/css/swiper-bundle.min.css') }}"/>
     <link rel="stylesheet" href="{{ asset('assets/css/animate.css') }}"/>
+    <link rel="stylesheet" href="{{ asset('assets/css/alert.css') }}"/>
     <link rel="stylesheet" href="{{ asset('assets/css/parallax.css') }}"/>
+    <link rel="stylesheet" href="{{ asset('assets/css/toogleButton.css') }}"/>
     <link rel="stylesheet" href="{{ asset('assets/css/tailwind.css') }}"/>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
     <!-- ==== WOW JS ==== -->
     <script src="{{ asset('assets/js/wow.min.js') }}"></script>
     <script>
@@ -19,14 +23,14 @@
     </script>
 </head>
 
-<body style="{{ Request::url() == 'http://127.0.0.1:8000/' ? 'background-color: black;' : '' }}">
+<body style="{{ Route::currentRouteNamed('home') ? 'background-color: black;' : '' }}">
 <!-- ====== Navbar Section Start -->
-
-@if(Request::url() == 'http://127.0.0.1:8000/')
-    <x-navbar.home-navbar/>
+@if(request()->is('/') || request()->is('home'))
+    <x-navbar.home-navbar :user="$user"/>
 @else
     <x-navbar.authentication-navbar/>
 @endif
+
 
 <!-- ====== Navbar Section End -->
 
@@ -651,7 +655,7 @@
 <!-- ====== Made With Button End -->
 
 <!-- ====== All Scripts -->
-
+<script src="{{ asset('assets/js/countDown.js') }}"></script>
 <script src="{{ asset('assets/js/swiper-bundle.min.js') }}"></script>
 <script src="{{ asset('assets/js/main.js') }}"></script>
 <script src="{{ asset('assets/js/image-register.js') }}"></script>
