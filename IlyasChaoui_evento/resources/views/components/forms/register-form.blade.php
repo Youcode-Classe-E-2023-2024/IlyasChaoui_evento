@@ -97,7 +97,6 @@
                                             <option value="{{ $city->id }}">{{ $city->City }}</option>
                                         @endforeach
                                     </select>
-
                                 </div>
                                 @error('city')
                                 <div
