@@ -107,8 +107,10 @@ class UserController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)
+    public function logout()
     {
-        //
+        Auth::logout();
+
+        return redirect('/login')->with('success', 'You have been successfully logged out!');
     }
 }
