@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Auth\ResetPasswordController;
+use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\EventController;
 use App\Http\Controllers\ForgetPasswordController;
 use App\Http\Controllers\HomeController;
@@ -29,11 +30,7 @@ Route::get('/password/reset/{token}', [ResetPasswordController::class, 'showRese
 Route::post('/password/reset', [ResetPasswordController::class, 'reset'])->name('password.update');
 Route::post('/logout', [UserController::class, 'logout'])->name('logout');
 Route::post('/add/event', [EventController::class, 'store'])->name('add.event');
-
-
-
-
-
+Route::get('/dashboard/static', [DashboardController::class, 'index'])->name('static.dashboard');
 
 Route::get('/login', function () {
     return view('authentication.authentication');
