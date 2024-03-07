@@ -54,13 +54,13 @@
                             <input type="email" placeholder="Email" name="email"
                                    class="w-full px-5 py-3 text-base transition bg-transparent border rounded-md outline-none border-stroke dark:border-dark-3 text-body-color dark:text-dark-6 placeholder:text-dark-6 focus:border-primary dark:focus:border-primary focus-visible:shadow-none" />
                             @error('email')
-                            <div class="alert fade mb-4 alert-simple alert-danger alert-dismissible text-left font__family-montserrat font__size-16 font__weight-light brk-library-rendered rendered show" role="alert">
+                            <div class="alert mt-5 fade mb-4 alert-simple alert-danger alert-dismissible text-left font__family-montserrat font__size-16 font__weight-light brk-library-rendered rendered show" role="alert">
                                 <button type="button" class="close font__size-18" data-dismiss="alert">
                                     <span aria-hidden="true"><i class="fa fa-times danger"></i></span>
                                     <span class="sr-only">Close</span>
                                 </button>
                                 <i class="start-icon far fa-times-circle faa-pulse animated"></i>
-                                <strong class="font__weight-semibold">Oh snap!</strong> {{ $message }}
+                                <strong class="text-red-500">{{ $message }}</strong>
                             </div>
                             @enderror
                         </div>
@@ -74,7 +74,7 @@
                                     <span class="sr-only">Close</span>
                                 </button>
                                 <i class="start-icon far fa-times-circle faa-pulse animated"></i>
-                                <strong class="font__weight-semibold">Oh snap!</strong> {{ $message }}
+                               <strong class="text-red-500">{{ $message }}</strong>
                             </div>
                             @enderror
                         </div>
