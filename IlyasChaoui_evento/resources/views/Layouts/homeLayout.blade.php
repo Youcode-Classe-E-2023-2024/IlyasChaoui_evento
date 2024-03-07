@@ -5,19 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Evento | @yield('title')</title>
-    <link rel="shortcut icon" href="{{ asset('assets/images/favicon.png') }}" type="image/x-icon"/>
+    <link rel="shortcut icon" href="{{ asset('assets-home/images/favicon.png') }}" type="image/x-icon"/>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="{{ asset('assets/css/swiper-bundle.min.css') }}"/>
-    <link rel="stylesheet" href="{{ asset('assets/css/animate.css') }}"/>
-    <link rel="stylesheet" href="{{ asset('assets/css/alert.css') }}"/>
-    <link rel="stylesheet" href="{{ asset('assets/css/parallax.css') }}"/>
-    <link rel="stylesheet" href="{{ asset('assets/css/toogleButton.css') }}"/>
-    <link rel="stylesheet" href="{{ asset('assets/css/tailwind.css') }}"/>
+    <link rel="stylesheet" href="{{ asset('assets-home/css/swiper-bundle.min.css') }}"/>
+    <link rel="stylesheet" href="{{ asset('assets-home/css/animate.css') }}"/>
+    <link rel="stylesheet" href="{{ asset('assets-home/css/alert.css') }}"/>
+    <link rel="stylesheet" href="{{ asset('assets-home/css/parallax.css') }}"/>
+    <link rel="stylesheet" href="{{ asset('assets-home/css/toogleButton.css') }}"/>
+    <link rel="stylesheet" href="{{ asset('assets-home/css/tailwind.css') }}"/>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
     <!-- ==== WOW JS ==== -->
-    <script src="{{ asset('assets/js/wow.min.js') }}"></script>
+    <script src="{{ asset('assets-home/js/wow.min.js') }}"></script>
     <script>
         new WOW().init();
     </script>
@@ -51,7 +51,7 @@
                         class="mb-6 inline-block max-w-[160px]"
                     >
                         <img
-                            src="assets/images/logo/logo-white.svg"
+                            src="assets-home/images/logo/logo-white.svg"
                             alt="logo"
                             class="max-w-full"
                         />
@@ -267,7 +267,7 @@
                         >
                             <div class="overflow-hidden rounded">
                                 <img
-                                    src="./assets/images/blog/blog-footer-01.jpg"
+                                    src="./assets-home/images/blog/blog-footer-01.jpg"
                                     alt="blog"
                                 />
                             </div>
@@ -283,7 +283,7 @@
                         >
                             <div class="overflow-hidden rounded">
                                 <img
-                                    src="./assets/images/blog/blog-footer-02.jpg"
+                                    src="./assets-home/images/blog/blog-footer-02.jpg"
                                     alt="blog"
                                 />
                             </div>
@@ -351,11 +351,11 @@
 
     <div>
         <span class="absolute left-0 top-0 z-[-1]">
-          <img src="assets/images/footer/shape-1.svg" alt=""/>
+          <img src="assets-home/images/footer/shape-1.svg" alt=""/>
         </span>
 
         <span class="absolute bottom-0 right-0 z-[-1]">
-          <img src="assets/images/footer/shape-3.svg" alt=""/>
+          <img src="assets-home/images/footer/shape-3.svg" alt=""/>
         </span>
 
         <span class="absolute right-0 top-0 z-[-1]">
@@ -641,12 +641,12 @@
     <span class="block h-4 w-px bg-stroke dark:bg-dark-3"></span>
     <span class="block w-full max-w-[88px]">
         <img
-            src="./assets/images/brands/tailgrids.svg"
+            src="./assets-home/images/brands/tailgrids.svg"
             alt="tailgrids"
             class="dark:hidden"
         />
         <img
-            src="./assets/images/brands/tailgrids-white.svg"
+            src="./assets-home/images/brands/tailgrids-white.svg"
             alt="tailgrids"
             class="hidden dark:block"
         />
@@ -655,10 +655,10 @@
 <!-- ====== Made With Button End -->
 
 <!-- ====== All Scripts -->
-<script src="{{ asset('assets/js/countDown.js') }}"></script>
-<script src="{{ asset('assets/js/swiper-bundle.min.js') }}"></script>
-<script src="{{ asset('assets/js/main.js') }}"></script>
-<script src="{{ asset('assets/js/image-register.js') }}"></script>
+<script src="{{ asset('assets-home/js/countDown.js') }}"></script>
+<script src="{{ asset('assets-home/js/swiper-bundle.min.js') }}"></script>
+<script src="{{ asset('assets-home/js/main.js') }}"></script>
+<script src="{{ asset('assets-home/js/image-register.js') }}"></script>
 
 <script>
 

@@ -13,23 +13,23 @@
       ud_header.classList.remove("sticky");
     }
 
-    if(logo.length) {
+    if (logo.length) {
       // === logo change
       if (ud_header.classList.contains("sticky")) {
         document.querySelector(".header-logo").src =
-          "assets/images/logo/homeLogo.png"
+          "assets-home/images/logo/homeLogo.png"
       } else {
         document.querySelector(".header-logo").src =
-          "assets/images/logo/homeLogo.png"
+          "assets-home/images/logo/homeLogo.png"
       }
     }
 
     if (document.documentElement.classList.contains("dark")) {
-      if(logo.length) {
+      if (logo.length) {
         // === logo change
         if (ud_header.classList.contains("sticky")) {
           document.querySelector(".header-logo").src =
-            "assets/images/logo/darkLogo.png"
+            "assets-home/images/logo/darkLogo.png"
         }
       }
     }
@@ -118,7 +118,7 @@
     scrollTo(document.documentElement);
   };
 
-    /* ========  themeSwitcher start ========= */
+  /* ========  themeSwitcher start ========= */
 
   // themeSwitcher
   const themeSwitcher = document.getElementById('themeSwitcher');

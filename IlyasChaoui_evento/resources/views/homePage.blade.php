@@ -8,24 +8,24 @@
     <div id="home" class="relative h-full overflow-x-auto fixed pt-[120px] md:pt-[130px] lg:pt-[160px]">
         <div class="container">
             <div class="-mx-4 flex flex-wrap items-center">
-                <img src="./assets/images/header/sky.png" class="fixed z-0 h-full w-full" alt=""
+                <img src="./assets-home/images/header/sky.png" class="fixed z-0 h-full w-full" alt=""
                     style="z-index: -1; top: 0; left: 0">
-                <img src="./assets/images/header/bushes.png" alt=""
+                <img src="./assets-home/images/header/bushes.png" alt=""
                     style="position: fixed;top: -29%; left: 0%;z-index: -1">
                 <div class="parallax__layer water">
-                    <img src="./assets/images/header/water.png" alt=""
+                    <img src="./assets-home/images/header/water.png" alt=""
                         style="position: fixed;top: -31%; left: 0%;z-index: -1">
                 </div>
                 <div class="parallax__layer people1">
-                    <img src="./assets/images/header/people1.png" alt=""
+                    <img src="./assets-home/images/header/people1.png" alt=""
                         style="position: fixed;top: -31%; left: 0%;z-index: -1">
                 </div>
                 <div class="parallax__layer people2">
-                    <img src="./assets/images/header/people2.png" alt=""
+                    <img src="./assets-home/images/header/people2.png" alt=""
                         style="position: fixed;top: -31%; left: 0%;z-index: -1">
                 </div>
                 <div class="parallax__layer people3">
-                    <img src="./assets/images/header/people3.png" alt=""
+                    <img src="./assets-home/images/header/people3.png" alt=""
                         style="position: fixed;top: -31%; left: 0%;z-index: -1">
                 </div>
                 <div class="parallax__layer hero-text">
@@ -68,9 +68,9 @@
             style="z-index: 100">
             <!-- component -->
             <!--
-                  UI Design Prototype
-                  Link : https://dribbble.com/shots/10452538-React-UI-Components
-                -->
+                      UI Design Prototype
+                      Link : https://dribbble.com/shots/10452538-React-UI-Components
+                    -->
             <div class="relative py-3 mt-96 sm:max-w-xl sm:mx-auto">
                 <div class="relative px-4 py-10 bg-white mx-8 md:mx-0 shadow rounded-3xl sm:p-10">
                     <div class="max-w-md mx-auto">
@@ -745,24 +745,27 @@
         <div class="container px-4">
             <div class="-mx-4 flex flex-wrap items-center justify-center gap-8 xl:gap-11">
                 <a href="https://graygrids.com/">
-                    <img src="./assets/images/brands/graygrids.svg" alt="graygrids" class="dark:hidden" />
-                    <img src="./assets/images/brands/graygrids-white.svg" alt="graygrids" class="hidden dark:block" />
+                    <img src="./assets-home/images/brands/graygrids.svg" alt="graygrids" class="dark:hidden" />
+                    <img src="./assets-home/images/brands/graygrids-white.svg" alt="graygrids"
+                        class="hidden dark:block" />
                 </a>
                 <a href="https://lineicons.com/">
-                    <img src="./assets/images/brands/lineicons.svg" alt="lineicons" class="dark:hidden" />
-                    <img src="./assets/images/brands/lineicons-white.svg" alt="graygrids" class="hidden dark:block" />
+                    <img src="./assets-home/images/brands/lineicons.svg" alt="lineicons" class="dark:hidden" />
+                    <img src="./assets-home/images/brands/lineicons-white.svg" alt="graygrids"
+                        class="hidden dark:block" />
                 </a>
                 <a href="https://uideck.com/">
-                    <img src="./assets/images/brands/uideck.svg" alt="uideck" class="dark:hidden" />
-                    <img src="./assets/images/brands/uideck-white.svg" alt="graygrids" class="hidden dark:block" />
+                    <img src="./assets-home/images/brands/uideck.svg" alt="uideck" class="dark:hidden" />
+                    <img src="./assets-home/images/brands/uideck-white.svg" alt="graygrids" class="hidden dark:block" />
                 </a>
                 <a href="https://ayroui.com/">
-                    <img src="./assets/images/brands/ayroui.svg" alt="ayroui" class="dark:hidden" />
-                    <img src="./assets/images/brands/ayroui-white.svg" alt="graygrids" class="hidden dark:block" />
+                    <img src="./assets-home/images/brands/ayroui.svg" alt="ayroui" class="dark:hidden" />
+                    <img src="./assets-home/images/brands/ayroui-white.svg" alt="graygrids" class="hidden dark:block" />
                 </a>
                 <a href="https://tailgrids.com/">
-                    <img src="./assets/images/brands/tailgrids.svg" alt="tailgrids" class="dark:hidden" />
-                    <img src="./assets/images/brands/tailgrids-white.svg" alt="graygrids" class="hidden dark:block" />
+                    <img src="./assets-home/images/brands/tailgrids.svg" alt="tailgrids" class="dark:hidden" />
+                    <img src="./assets-home/images/brands/tailgrids-white.svg" alt="graygrids"
+                        class="hidden dark:block" />
                 </a>
             </div>
         </div>

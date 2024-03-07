@@ -44,8 +44,8 @@
                     data-wow-delay=".15s">
                     <div class="mb-10 text-center">
                         <a href="javascript:void(0)" class="mx-auto inline-block max-w-[160px]">
-                            <img src="assets/images/logo/homeLogo.png" alt="logo" class="w-full dark:hidden" />
-                            <img src="assets/images/logo/darkLogo.png" alt="logo" class="hidden w-full dark:block" />
+                            <img src="assets-home/images/logo/homeLogo.png" alt="logo" class="w-full dark:hidden" />
+                            <img src="assets-home/images/logo/darkLogo.png" alt="logo" class="hidden w-full dark:block" />
                         </a>
                     </div>
                     <form action="{{ route('store.user') }}" method="post" enctype="multipart/form-data">
@@ -56,7 +56,7 @@
                         <!-- Circular image container -->
                         <label for="imageInput" class="relative mt-2 mr-48 mb-10 top-2 left-20 cursor-pointer ml-10 flex justify-center">
                             <div class="rounded-full overflow-hidden">
-                                <img id="previewImage" style="width: 90px; height: 90px" src="/assets/images/logo/photo.png"
+                                <img id="previewImage" style="width: 90px; height: 90px" src="/assets-home/images/logo/photo.png"
                                      alt="User Picture">
                             </div>
                         </label>

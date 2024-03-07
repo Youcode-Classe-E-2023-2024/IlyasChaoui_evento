@@ -45,8 +45,8 @@
                     data-wow-delay=".15s">
                     <div class="mb-10 text-center">
                         <a href="javascript:void(0)" class="mx-auto inline-block max-w-[160px]">
-                            <img src={{ asset('assets/images/logo/homeLogo.png') }} alt="logo" class="w-full dark:hidden"/>
-                            <img src={{ asset('assets/images/logo/darkLogo.png') }} alt="logo" class="hidden w-full dark:block"/>
+                            <img src={{ asset('assets-home/images/logo/homeLogo.png') }} alt="logo" class="w-full dark:hidden"/>
+                            <img src={{ asset('assets-home/images/logo/darkLogo.png') }} alt="logo" class="hidden w-full dark:block"/>
                         </a>
                     </div>
                     <form method="post" action="{{ route('password.update') }}">

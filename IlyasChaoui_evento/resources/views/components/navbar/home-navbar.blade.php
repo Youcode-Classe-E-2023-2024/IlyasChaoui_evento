@@ -6,7 +6,7 @@
             <div class="w-60 max-w-full px-4">
                 <a href="/" class="navbar-logo block w-full py-5">
                     <img
-                        src="{{ asset('assets/images/logo/homeLogo.png') }}"
+                        src="{{ asset('assets-home/images/logo/homeLogo.png') }}"
                         alt="logo"
                         class="header-logo w-full"
                     />

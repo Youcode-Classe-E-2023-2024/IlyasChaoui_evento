@@ -4,8 +4,8 @@
         <div class="relative flex items-center justify-between -mx-4">
             <div class="max-w-full px-4 w-60">
                 <a href="index.html" class="block w-full py-5 navbar-logo">
-                    <img src={{ asset('assets/images/logo/homeLogo.png') }} alt="logo" class="w-full dark:hidden"/>
-                    <img src={{ asset('assets/images/logo/darkLogo.png') }} alt="logo"
+                    <img src={{ asset('assets-home/images/logo/homeLogo.png') }} alt="logo" class="w-full dark:hidden"/>
+                    <img src={{ asset('assets-home/images/logo/darkLogo.png') }} alt="logo"
                          class="hidden w-full dark:block"/>
                 </a>
             </div>
