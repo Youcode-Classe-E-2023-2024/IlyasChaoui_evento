@@ -13,6 +13,8 @@
     <!-- Include this in the <head> section of your HTML -->
     <link href="https://cdn.tailwindcss.com/3.0.24/tailwind.min.css" rel="stylesheet">
     <!-- Tailwind cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
     <!-- Nucleo Icons -->
     <link href="{{ asset('./assets/css/nucleo-icons.css') }}" rel="stylesheet" />
@@ -70,13 +72,33 @@
         <!-- end Navbar -->
 
         @yield('main')
-
     </main>
-
-    @yield('content')
-
+    <x-sidebar.settings-sidebar :data="$data"/>
 </body>
 <!-- plugin for charts  -->
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const labels = @json($data['eventNames']);
+        const data = {
+            labels: labels,
+            datasets: [{
+                label: 'Number of Reservations',
+                data: @json($data['reservationCounts']),
+                fill: false,
+                borderColor: 'rgb(75, 192, 192)',
+                tension: 0.1
+            }]
+        };
+
+        const config = {
+            type: 'line',
+            data: data,
+        };
+
+        const ctx = document.getElementById('reservationChart').getContext('2d');
+        new Chart(ctx, config);
+    });
+</script>
 <script src="{{ asset('assets/js/plugins/chartjs.min.js') }}" async></script>
 <!-- plugin for scrollbar  -->
 <script src="{{ asset('./assets/js/plugins/perfect-scrollbar.min.js') }}" async></script>
