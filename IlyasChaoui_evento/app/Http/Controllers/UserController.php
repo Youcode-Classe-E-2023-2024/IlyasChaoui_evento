@@ -9,6 +9,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Password;
+use Spatie\Permission\Models\Role;
 
 class UserController extends Controller
 {
@@ -41,14 +42,14 @@ class UserController extends Controller
         if ($request->hasFile('picture')) {
             $file = $request->file('picture');
             $filename = time() . '_' . $file->getClientOriginalName();
-            $destinationPath = 'assets/images/profileImages';
+            $destinationPath = 'assets-home/images/profileImages';
             $file->move(public_path($destinationPath), $filename);
             $picturePath = $destinationPath . '/' . $filename;
         }
 
         $user = User::create([
             'name' => $request->name,
-            'picture' => $picturePath, // Use directly, it's already null if not set
+            'picture' => $picturePath,
             'phoneNumber' => $request->phoneNumber,
             'city_id' => $request->city_id,
             'role' => $request->role,
@@ -56,6 +57,10 @@ class UserController extends Controller
             'password' => Hash::make($request->password),
         ]);
 
+        // Assign Role based on user's choice
+        $role = $request->input('role');
+        $roleModel = Role::where('name', $role)->first();
+        $user->assignRole($roleModel);
         // Optionally, redirect with a success message or to a specific route.
         return redirect(RouteServiceProvider::LOGIN)->with('success', 'User created successfully.');
     }
