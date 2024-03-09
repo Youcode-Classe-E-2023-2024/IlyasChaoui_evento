@@ -20,10 +20,12 @@ class HomeController extends Controller
         if (Auth::check()) {
             $user = Auth::user();
         }
+
         $cities = City::all();
         $categories = Category::all();
-        $events = Event::with(['category', 'city'])->get();
-        return view('homePage', compact('user','cities','categories','events'));
+        $events = Event::with(['category', 'city', 'reservations'])
+            ->where('status', '1')->get();
+        return view('homePage', compact('user', 'cities', 'categories', 'events'));
     }
 
     /**
@@ -37,9 +39,12 @@ class HomeController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function showContentPage($id, $categoryId)
     {
-        //
+        $event = Event::find($id);
+        $popularEvents = Event::latest()->take(3)->get();
+        $relatedEvents = Event::where('category_id', $categoryId)->latest()->take(3)->get();
+        return view('homePages.contentPage', compact('event', 'popularEvents', 'relatedEvents'));
     }
 
     /**
