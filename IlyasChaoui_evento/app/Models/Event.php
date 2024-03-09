@@ -18,6 +18,7 @@ class Event extends Model implements HasMedia
         'id_image',
         'created_by',
         'price',
+        'status',
         'acceptation',
         'place_number',
         'city_id',
@@ -38,6 +39,11 @@ class Event extends Model implements HasMedia
     public function createdBy()
     {
         return $this->belongsTo(User::class, 'created_by');
+    }
+
+    public function reservations()
+    {
+        return $this->hasMany(Reservation::class);
     }
 
 }
