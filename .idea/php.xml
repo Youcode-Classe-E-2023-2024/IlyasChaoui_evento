@@ -120,6 +120,13 @@
       <path value="$PROJECT_DIR$/IlyasChaoui_evento/vendor/maennchen/zipstream-php" />
       <path value="$PROJECT_DIR$/IlyasChaoui_evento/vendor/spatie/laravel-package-tools" />
       <path value="$PROJECT_DIR$/IlyasChaoui_evento/vendor/spatie/image-optimizer" />
+      <path value="$PROJECT_DIR$/IlyasChaoui_evento/vendor/dompdf/dompdf" />
+      <path value="$PROJECT_DIR$/IlyasChaoui_evento/vendor/masterminds/html5" />
+      <path value="$PROJECT_DIR$/IlyasChaoui_evento/vendor/barryvdh/laravel-dompdf" />
+      <path value="$PROJECT_DIR$/IlyasChaoui_evento/vendor/sabberworm/php-css-parser" />
+      <path value="$PROJECT_DIR$/IlyasChaoui_evento/vendor/phenx/php-font-lib" />
+      <path value="$PROJECT_DIR$/IlyasChaoui_evento/vendor/phenx/php-svg-lib" />
+      <path value="$PROJECT_DIR$/IlyasChaoui_evento/vendor/spatie/laravel-permission" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="8.1" />

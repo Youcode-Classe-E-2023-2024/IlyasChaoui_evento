@@ -2,21 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="63c2625c-aa74-4be5-98d1-6577e619f40b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/IlyasChaoui_evento/config/media-library.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IlyasChaoui_evento/public/assets/css/alert.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IlyasChaoui_evento/public/assets/css/toogleButton.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IlyasChaoui_evento/public/assets/js/countDown.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IlyasChaoui_evento/resources/views/dashboardPage.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/IlyasChaoui_evento.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/IlyasChaoui_evento.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IlyasChaoui_evento/app/Http/Controllers/DashboardController.php" beforeDir="false" afterPath="$PROJECT_DIR$/IlyasChaoui_evento/app/Http/Controllers/DashboardController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IlyasChaoui_evento/app/Http/Controllers/EventController.php" beforeDir="false" afterPath="$PROJECT_DIR$/IlyasChaoui_evento/app/Http/Controllers/EventController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IlyasChaoui_evento/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/IlyasChaoui_evento/app/Http/Controllers/HomeController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IlyasChaoui_evento/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/IlyasChaoui_evento/app/Http/Controllers/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IlyasChaoui_evento/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/IlyasChaoui_evento/app/Http/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IlyasChaoui_evento/app/Models/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/IlyasChaoui_evento/app/Models/Category.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IlyasChaoui_evento/app/Models/Event.php" beforeDir="false" afterPath="$PROJECT_DIR$/IlyasChaoui_evento/app/Models/Event.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IlyasChaoui_evento/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/IlyasChaoui_evento/app/Models/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IlyasChaoui_evento/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/IlyasChaoui_evento/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IlyasChaoui_evento/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/IlyasChaoui_evento/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IlyasChaoui_evento/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/IlyasChaoui_evento/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IlyasChaoui_evento/config/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/IlyasChaoui_evento/config/auth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IlyasChaoui_evento/public/assets-home/css/alert.css" beforeDir="false" afterPath="$PROJECT_DIR$/IlyasChaoui_evento/public/assets-home/css/alert.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IlyasChaoui_evento/public/assets-home/js/countDown.js" beforeDir="false" afterPath="$PROJECT_DIR$/IlyasChaoui_evento/public/assets-home/js/countDown.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IlyasChaoui_evento/public/assets/js/charts.js" beforeDir="false" afterPath="$PROJECT_DIR$/IlyasChaoui_evento/public/assets/js/charts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IlyasChaoui_evento/resources/views/Layouts/dashboardLayout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/IlyasChaoui_evento/resources/views/Layouts/dashboardLayout.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IlyasChaoui_evento/resources/views/Layouts/homeLayout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/IlyasChaoui_evento/resources/views/Layouts/homeLayout.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IlyasChaoui_evento/resources/views/components/forms/login-form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/IlyasChaoui_evento/resources/views/components/forms/login-form.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IlyasChaoui_evento/resources/views/components/forms/register-form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/IlyasChaoui_evento/resources/views/components/forms/register-form.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IlyasChaoui_evento/resources/views/components/dashboard-pages/static-section.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/IlyasChaoui_evento/resources/views/components/dashboard-pages/static-section.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IlyasChaoui_evento/resources/views/components/navbar/authentication-navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/IlyasChaoui_evento/resources/views/components/navbar/authentication-navbar.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IlyasChaoui_evento/resources/views/components/navbar/home-navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/IlyasChaoui_evento/resources/views/components/navbar/home-navbar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IlyasChaoui_evento/resources/views/dashboardPage.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/IlyasChaoui_evento/resources/views/dashboardPage.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IlyasChaoui_evento/resources/views/homePage.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/IlyasChaoui_evento/resources/views/homePage.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IlyasChaoui_evento/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/IlyasChaoui_evento/routes/web.php" afterDir="false" />
     </list>
@@ -25,7 +34,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/IlyasChaoui_evento/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -163,6 +172,13 @@
       <path value="$PROJECT_DIR$/IlyasChaoui_evento/vendor/maennchen/zipstream-php" />
       <path value="$PROJECT_DIR$/IlyasChaoui_evento/vendor/spatie/laravel-package-tools" />
       <path value="$PROJECT_DIR$/IlyasChaoui_evento/vendor/spatie/image-optimizer" />
+      <path value="$PROJECT_DIR$/IlyasChaoui_evento/vendor/dompdf/dompdf" />
+      <path value="$PROJECT_DIR$/IlyasChaoui_evento/vendor/masterminds/html5" />
+      <path value="$PROJECT_DIR$/IlyasChaoui_evento/vendor/barryvdh/laravel-dompdf" />
+      <path value="$PROJECT_DIR$/IlyasChaoui_evento/vendor/sabberworm/php-css-parser" />
+      <path value="$PROJECT_DIR$/IlyasChaoui_evento/vendor/phenx/php-font-lib" />
+      <path value="$PROJECT_DIR$/IlyasChaoui_evento/vendor/phenx/php-svg-lib" />
+      <path value="$PROJECT_DIR$/IlyasChaoui_evento/vendor/spatie/laravel-permission" />
     </include_path>
   </component>
   <component name="ProjectId" id="2dDbShooajPgVGYFBvgzWPLhCrQ" />
@@ -175,7 +191,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/xampp/htdocs/Laravel project/IlyasChaoui_evento/IlyasChaoui_evento/public/assets/images/logo&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/xampp/htdocs/Laravel project/IlyasChaoui_evento/IlyasChaoui_evento/Uml&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
@@ -183,16 +199,17 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\Laravel project\IlyasChaoui_evento\IlyasChaoui_evento\Uml" />
       <recent name="C:\xampp\htdocs\Laravel project\IlyasChaoui_evento\IlyasChaoui_evento\public\assets\images\logo" />
       <recent name="C:\xampp\htdocs\Laravel project\IlyasChaoui_evento\IlyasChaoui_evento\public\assets\images\header" />
       <recent name="C:\xampp\htdocs\Laravel project\IlyasChaoui_evento\IlyasChaoui_evento\public" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\Laravel project\IlyasChaoui_evento\IlyasChaoui_evento\resources\views\components\sidebar" />
       <recent name="C:\xampp\htdocs\Laravel project\IlyasChaoui_evento\IlyasChaoui_evento\public" />
       <recent name="C:\xampp\htdocs\Laravel project\IlyasChaoui_evento\IlyasChaoui_evento\public\assets\css" />
       <recent name="C:\xampp\htdocs\Laravel project\IlyasChaoui_evento\IlyasChaoui_evento\app\Http\Controllers\Auth" />
       <recent name="C:\xampp\htdocs\Laravel project\IlyasChaoui_evento\IlyasChaoui_evento\resources\views\components\forms" />
-      <recent name="C:\xampp\htdocs\Laravel project\IlyasChaoui_evento\IlyasChaoui_evento\resources\views\components\navbar" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -206,6 +223,8 @@
       <workItem from="1709545603571" duration="362000" />
       <workItem from="1709637258014" duration="35209000" />
       <workItem from="1709758419708" duration="18836000" />
+      <workItem from="1709908332331" duration="7075000" />
+      <workItem from="1709928336364" duration="9471000" />
     </task>
     <servers />
   </component>
