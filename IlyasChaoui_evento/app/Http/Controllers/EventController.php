@@ -3,9 +3,11 @@
 namespace App\Http\Controllers;
 
 use App\Models\Event;
+use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Auth;
+use Spatie\Permission\Models\Role;
 
 class EventController extends Controller
 {
@@ -14,7 +16,7 @@ class EventController extends Controller
      */
     public function index()
     {
-       //
+        //
     }
 
     /**
@@ -66,14 +68,46 @@ class EventController extends Controller
     }
 
 
+
+    /**
+     * --------------------------------
+     * Admin
+     * --------------------------------
+     */
+
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function showEvents()
     {
-        //
+        $data = [
+        'events' => Event::all()->where('status', '0'),
+        'user' => User::all(),
+        'roles' => Role::all(),
+
+        ];
+
+        return view('dashboardPage', compact('data'));
     }
 
+    /**
+     * Display the specified resource.
+     */
+    public function approveEvent(Request $request, $id)
+    {
+        $event = Event::findOrFail($id);
+        $event->update(['status' => 1]);
+
+        return redirect('/event')->with('success', 'Evenement bien ajoutée.');
+    }
+
+    public function declineEvent(Request $request, $id)
+    {
+        $event = Event::findOrFail($id);
+        $event->delete();
+
+        return redirect('/event')->with('success', 'Evenement bien ajoutée.');
+    }
     /**
      * Update the specified resource in storage.
      */
