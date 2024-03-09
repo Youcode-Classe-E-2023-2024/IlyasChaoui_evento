@@ -1,0 +1,79 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use App\Models\Category;
+use App\Models\Event;
+use App\Models\User;
+use Illuminate\Http\Request;
+use Spatie\Permission\Models\Role;
+
+class CategoryController extends Controller
+{
+    /**
+     * Display a listing of the resource.
+     */
+    public function index()
+    {
+        $data = [
+            'category' => Category::all(),
+            'user' => User::all(),
+            'roles' => Role::all(),
+        ];
+
+        return view('dashboardPage', compact( 'data'));
+    }
+
+    /**
+     * Store a newly created resource in storage.
+     */
+    public function store(Request $request)
+    {
+        $request->validate([
+            'categoryName' => 'required|string|max:255',
+        ]);
+
+        $category = new Category();
+        $category->name = $request->input('categoryName');
+        $category->save();
+
+        return redirect('/category')->with('success', 'Category added successfully');
+    }
+
+    /**
+     * Update the specified resource in storage.
+     */
+    public function updateCategory(Request $request, $id)
+    {
+        $request->validate([
+            'categoryName' => 'required|string|max:255',
+        ]);
+
+        $category = Category::find($id);
+
+        if (!$category) {
+            return redirect('/category')->with('error', 'Category not found');
+        }
+
+        $category->name = $request->input('categoryName');
+        $category->save();
+
+        return redirect('/category')->with('success', 'Category updated successfully');
+    }
+
+    /**
+     * Remove the specified resource from storage.
+     */
+    public function deleteCategory($id)
+    {
+        $category = Category::find($id);
+
+        if (!$category) {
+            return redirect()->route('your.route.name')->with('error', 'Category not found');
+        }
+
+        $category->delete();
+
+        return redirect('/category')->with('success', 'Category deleted successfully');
+    }
+}
