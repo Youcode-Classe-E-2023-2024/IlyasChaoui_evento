@@ -37,6 +37,15 @@ Route::post('/logout', [UserController::class, 'logout'])->name('logout');
 Route::post('/add/event', [EventController::class, 'store'])->name('add.event');
 Route::get('/static', [DashboardController::class, 'index'])->name('static.dashboard');
 Route::get('/content/{id}/{categoryId}', [HomeController::class, 'showContentPage'])->name('content.page');
+Route::get('/myEvent', [HomeController::class, 'showMyEventsPage'])->name('myEvents.page');
+Route::delete('/MyEvent/{id}', [EventController::class, 'deleteEvent'])->name('delete.event');
+Route::put('/myEvent/{id}', [EventController::class, 'update'])->name('events.update');
+Route::post('/logout/dashboard', [UserController::class, 'logout'])->name('logout');
+
+Route::patch('/approve/reservation/{reservationId}', [ReservationController::class, 'approveReservation'])->name('approve.reservation');
+
+Route::get('/myEvent/static/{id}/{categoryId}', [HomeController::class, 'showMyEventStaticPage'])->name('static.content.page');
+//Route::post('/approve/reservation', [ReservationController::class, 'approveReservation'])->name('approve.reservation');
 
 Route::get('/category', [CategoryController::class, 'index'])->name('category.dashboard');
 Route::post('/category/add', [CategoryController::class, 'store'])->name('add.category');

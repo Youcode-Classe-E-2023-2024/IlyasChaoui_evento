@@ -231,7 +231,7 @@
                                     </h3>
 
                                     {{-- popup for reserve ticket --}}
-                                    <x-popup.buy-ticket-popup :event="$event"/>
+                                    <x-popup.show-request-pop-up :event="$event"/>
 
                                     <div class="countdown-timer mb-10" data-deadline="{{ $event->deadline }}">
                                         <div class="flex flex-col">

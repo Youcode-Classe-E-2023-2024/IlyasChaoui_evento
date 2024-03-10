@@ -6,10 +6,7 @@
             <x-cards.static-cards :data="$data" />
         </div>
 
-        <div style="width: 80%; margin: auto;">
-            <canvas id="reservationChart"></canvas>
-        </div>
-
+        <x-cards.chart :eventStatistics="$eventStatistics" />
         <footer class="pt-4">
             <div class="w-full px-6 mx-auto">
                 <div class="flex flex-wrap items-center -mx-3 lg:justify-between">
@@ -20,8 +17,8 @@
                                 document.write(new Date().getFullYear() + ",");
                             </script>
                             made with <i class="fa fa-heart"></i> by
-                            <a href="https://www.creative-tim.com"
-                                class="font-semibold text-slate-700 dark:text-white" target="_blank">Creative Tim</a>
+                            <a href="https://www.creative-tim.com" class="font-semibold text-slate-700 dark:text-white"
+                                target="_blank">Creative Tim</a>
                             for a better web.
                         </div>
                     </div>
@@ -55,4 +52,3 @@
     </div>
     <!-- end cards -->
 </main>
-

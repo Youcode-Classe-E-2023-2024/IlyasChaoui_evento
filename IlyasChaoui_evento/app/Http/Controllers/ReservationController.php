@@ -29,7 +29,7 @@ class ReservationController extends Controller
         $validator = Validator::make($request->all(), [
             'eventId' => 'required',
             'acceptation' => 'required',
-            'email' => 'required|email', // Improved email validation
+            'email' => 'required|email',
         ]);
 
         if ($validator->fails()) {
@@ -46,23 +46,38 @@ class ReservationController extends Controller
             'status' => $status,
         ]);
 
-        $event = Event::with('category', 'city', 'createdBy')->find($request->input('eventId'));
-
-        $pdf = PDF::loadView('Reserve.ticket', compact('reservation', 'event'));
-        $pdfPath = storage_path('app/public/MailTicketTemplates/ticket_' . $reservation->id . '.pdf');
-        $pdf->save($pdfPath);
-
-        Mail::to([$request->input('email')])->send(new ReservationEvent($pdfPath));
-
+        $event = Event::with('category', 'city', 'createdBy')
+            ->find($request->input('eventId'));
+        if ($status == 0) {
+            $pdf = PDF::loadView('Reserve.ticket', compact('reservation', 'event'));
+            $pdfPath = storage_path('app/public/MailTicketTemplates/ticket_' . $reservation->id . '.pdf');
+            $pdf->save($pdfPath);
+            Mail::to([$request->input('email')])->send(new ReservationEvent($pdfPath));
+        }
         return redirect('/')->with('success', 'Evenement bien ajouté.');
     }
 
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function approveReservation(Request $request, $reservationId)
     {
-        // You can add code here if needed
+        $event = Event::with('category', 'city', 'createdBy')
+            ->find($request->input('eventId'));
+        $reservation = Reservation::find($reservationId);
+        if ($reservation) {
+            // Update the status to 0
+            $reservation->update(['status' => 0]);
+
+            $pdf = PDF::loadView('Reserve.ticket', compact('reservation', 'event'));
+            $pdfPath = storage_path('app/public/MailTicketTemplates/ticket_' . $reservation->id . '.pdf');
+            $pdf->save($pdfPath);
+            Mail::to([$request->input('email')])->send(new ReservationEvent($pdfPath));
+
+            return redirect()->back()->with('success', 'Reservation status updated successfully.');
+        }
+
+        return redirect()->back()->with('error', 'Unable to find the reservation.');
     }
 
     /**

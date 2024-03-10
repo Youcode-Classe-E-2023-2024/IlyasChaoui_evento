@@ -6,8 +6,15 @@
     <div class="w-full px-6 py-6 mx-auto">
         <!-- component -->
         <!-- Create By Joker Banny -->
-        <div class="md:px-4 md:grid md:grid-cols-2 lg:grid-cols-3 gap-5 space-y-4 md:space-y-0" style="height: ">
-            <x-cards.event-dashboard-cards :data="$data"/>
-        </div>
+        @if($data['eventCount'] == 0)
+            <div class="flex flex-col justify-center items-center">
+                <img src="{{ asset('./assets/img/emty-items.png') }}" class="w-[500px]" alt="">
+                <p class="text-xl font-bold absolute bottom-8 text-gray-500 dark:text-white">Oops...No Event Request Find</p>
+            </div>
+        @else
+            <div class="md:px-4 md:grid md:grid-cols-2 lg:grid-cols-3 gap-5 space-y-4 md:space-y-0">
+                <x-cards.event-dashboard-cards :data="$data"/>
+            </div>
+        @endif
     </div>
 </main>

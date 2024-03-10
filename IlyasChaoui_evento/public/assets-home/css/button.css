@@ -6,7 +6,7 @@ button {
 .c-button {
     background: linear-gradient(140deg, rgba(75, 118, 200, 1) 0%, rgba(31, 70, 145, 1) 100%);
     border-radius: 45px;
-    font-size: 25px;
+    font-size: 18px;
     text-align: left;
     padding: 11px 0px 11px 0px;
     border: 4px solid rgb(37, 37, 37) !important;
@@ -28,7 +28,7 @@ button {
     background: linear-gradient(318deg, rgba(75, 118, 200, 1) 0%, rgba(31, 70, 145, 1) 100%);
     border-radius: 100%;
     margin-left: 0;
-    padding: 8px 23px;
+    padding: 8px 18px;
     filter: blur(1px);
     text-align: center;
 }
@@ -51,4 +51,157 @@ button {
     box-shadow: inset 0px 0px 5px rgba(17, 17, 17, 0.6);
     border: 1px solid rgba(26, 26, 26, 0.5);
     color: rgba(255, 255, 255, 0.5);
+}
+
+/*buy button*/
+.buy-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 0 10px;
+    color: white;
+    text-shadow: 2px 2px rgb(116, 116, 116);
+    text-transform: uppercase;
+    cursor: pointer;
+    border: solid 2px black;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-size: 17px;
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease;
+}
+
+.buy-button:active {
+    transform: scale(0.9);
+    transition: all 100ms ease;
+}
+
+.buy-button svg {
+    transition: all 0.5s ease;
+    z-index: 2;
+}
+
+.play {
+    transition: all 0.5s ease;
+    transition-delay: 300ms;
+}
+
+.buy-button:hover svg {
+    transform: scale(3) translate(50%);
+}
+
+.now {
+    position: absolute;
+    left: 0;
+    transform: translateX(-100%);
+    transition: all 0.5s ease;
+    z-index: 2;
+}
+
+.buy-button:hover .now {
+    transform: translateX(10px);
+    transition-delay: 300ms;
+}
+
+.buy-button:hover .play {
+    transform: translateX(200%);
+    transition-delay: 300ms;
+}
+
+/*edit btn*/
+
+.Btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 45px;
+    height: 40px;
+    border: none;
+    padding: 0px 20px;
+    background-color: rgb(168, 38, 255);
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 5px 5px 0px rgb(140, 32, 212);
+    transition-duration: .3s;
+}
+
+.svg {
+    width: 13px;
+    position: absolute;
+    right: 0;
+    margin-right: 20px;
+    fill: white;
+    transition-duration: .3s;
+}
+
+.Btn:hover {
+    color: transparent;
+}
+
+.Btn:hover svg {
+    right: 43%;
+    margin: 0;
+    padding: 0;
+    border: none;
+    transition-duration: .3s;
+}
+
+.Btn:active {
+    transform: translate(3px , 3px);
+    transition-duration: .3s;
+    box-shadow: 2px 2px 0px rgb(140, 32, 212);
+}
+
+/*delete btn*/
+
+
+.bntDelete {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 45px;
+    height: 40px;
+    border: none;
+    padding: 0px 20px;
+    background-color: red;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 5px 5px 0px darkred;
+    transition-duration: .3s;
+}
+
+.svg {
+    width: 13px;
+    position: absolute;
+    right: 0;
+    margin-right: 20px;
+    fill: white;
+    transition-duration: .3s;
+}
+
+.bntDelete:hover {
+    color: transparent;
+}
+
+.bntDelete:hover svg {
+    right: 43%;
+    margin: 0;
+    padding: 0;
+    border: none;
+    transition-duration: .3s;
+}
+
+.bntDelete:active {
+    transform: translate(3px , 3px);
+    transition-duration: .3s;
+    box-shadow: 2px 2px 0px darkred;
 }

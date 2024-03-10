@@ -41,9 +41,18 @@ class Event extends Model implements HasMedia
         return $this->belongsTo(User::class, 'created_by');
     }
 
+    public function reservationsCount()
+    {
+        return $this->hasMany(Reservation::class)->where('status', '0');
+    }
+
     public function reservations()
     {
-        return $this->hasMany(Reservation::class);
+        return $this->hasMany(Reservation::class)->where('status', '1');
+    }
+    public function reservers()
+    {
+        return $this->belongsToMany(User::class, 'reservation', 'event_id', 'user_id')->withPivot('id', 'status');
     }
 
 }

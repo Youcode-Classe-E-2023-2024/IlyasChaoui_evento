@@ -15,10 +15,22 @@ class CategoryController extends Controller
      */
     public function index()
     {
+        $events = Event::all();
+        $eventNames = $events->pluck('name')->toArray();
+        $reservationCounts = [];
+
+        foreach ($events as $event) {
+            $reservationCounts[] = $event->reservations()->count();
+        }
+
         $data = [
             'category' => Category::all(),
             'user' => User::all(),
             'roles' => Role::all(),
+            'categoryCount' => Category::all()->count(),
+            'eventNames' => $eventNames,
+            'reservationCounts' => $reservationCounts,
+
         ];
 
         return view('dashboardPage', compact( 'data'));

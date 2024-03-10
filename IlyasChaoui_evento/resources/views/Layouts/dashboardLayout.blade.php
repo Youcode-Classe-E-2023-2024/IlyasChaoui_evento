@@ -43,6 +43,10 @@
     <!-- AlphineJS cdn -->
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
 
+    {{-- chart.js --}}
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.7.3/dist/alpine.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
     <!-- Main Styling -->
     <link href="{{ asset('./assets/css/argon-dashboard-tailwind.css?v=1.0.1') }}" rel="stylesheet" />
     <!-- Font Awesome Icons -->
@@ -55,7 +59,7 @@
 </head>
 
 <body
-    class="m-0 font-sans text-base antialiased font-normal dark:bg-slate-900 leading-default bg-gray-50 text-slate-500">
+    class="m-0 font-sans text-base antialiased font-normal dark:bg-slate-900 leading-default bg-zinc-100 text-slate-500">
     <div
         class="absolute bg-y-50 w-full top-0 bg-[url('https://raw.githubusercontent.com/creativetimofficial/public-assets/master/argon-dashboard-pro/assets/img/profile-layout-header.jpg')] min-h-75">
         <span class="absolute top-0 left-0 w-full h-full bg-blue-500 opacity-60"></span>
@@ -73,32 +77,10 @@
 
         @yield('main')
     </main>
-    <x-sidebar.settings-sidebar :data="$data"/>
+    <x-sidebar.settings-sidebar :data="$data" />
 </body>
 <!-- plugin for charts  -->
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        const labels = @json($data['eventNames']);
-        const data = {
-            labels: labels,
-            datasets: [{
-                label: 'Number of Reservations',
-                data: @json($data['reservationCounts']),
-                fill: false,
-                borderColor: 'rgb(75, 192, 192)',
-                tension: 0.1
-            }]
-        };
 
-        const config = {
-            type: 'line',
-            data: data,
-        };
-
-        const ctx = document.getElementById('reservationChart').getContext('2d');
-        new Chart(ctx, config);
-    });
-</script>
 <script src="{{ asset('assets/js/plugins/chartjs.min.js') }}" async></script>
 <!-- plugin for scrollbar  -->
 <script src="{{ asset('./assets/js/plugins/perfect-scrollbar.min.js') }}" async></script>

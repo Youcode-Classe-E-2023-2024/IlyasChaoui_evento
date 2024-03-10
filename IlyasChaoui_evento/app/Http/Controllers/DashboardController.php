@@ -2,13 +2,14 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Category;
-use App\Models\Event;
-use App\Models\Reservation;
 use App\Models\User;
+use App\Models\Event;
+use App\Models\Category;
+use App\Models\Reservation;
 use Illuminate\Http\Request;
-use Spatie\MediaLibrary\MediaCollections\Models\Media;
+use Illuminate\Support\Facades\DB;
 use Spatie\Permission\Models\Role;
+use Spatie\MediaLibrary\MediaCollections\Models\Media;
 
 class DashboardController extends Controller
 {
@@ -25,7 +26,16 @@ class DashboardController extends Controller
             $reservationCounts[] = $event->reservations()->count();
         }
 
+        $eventStatistics = Event::select(
+            DB::raw('DATE(created_at) as date'),
+            DB::raw('COUNT(*) as event_count')
+        )
+            ->groupBy('date')
+            ->get();
+        // dd($eventStatistics);
+
         $data = [
+
             'user' => User::all(),
             'counts' => [
                 'reservationCount' => Reservation::count(),
@@ -45,13 +55,14 @@ class DashboardController extends Controller
             'reservationCounts' => $reservationCounts,
         ];
 
-        return view('dashboardPage', compact('data'));
+        return view('dashboardPage', compact('data', 'eventStatistics'));
     }
 
     /**
      * Store a newly created resource in storage.
      */
-    function updateRole(Request $request) {
+    function updateRole(Request $request)
+    {
         $user = User::find($request->userId);
         $role = Role::find($request->id);
 

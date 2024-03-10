@@ -9,12 +9,12 @@
         @section('title')
             Static
         @endsection
-        <x-dashboard-pages.static-section :data="$data" />
+        <x-dashboard-pages.static-section :data="$data" :eventStatistics="$eventStatistics" />
     @else
         @section('title')
             Event
         @endsection
-        <x-dashboard-pages.event-section :data="$data"  />
+        <x-dashboard-pages.event-section :data="$data" />
     @endif
 
 @endsection

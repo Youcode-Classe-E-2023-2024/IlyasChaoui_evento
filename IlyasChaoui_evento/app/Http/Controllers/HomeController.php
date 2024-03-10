@@ -47,6 +47,35 @@ class HomeController extends Controller
         return view('homePages.contentPage', compact('event', 'popularEvents', 'relatedEvents'));
     }
 
+    public function showMyEventStaticPage($id, $categoryId)
+    {
+        $event = Event::with(['reservations', 'reservers'])
+            ->find($id);
+
+        $popularEvents = Event::latest()->take(3)->get();
+        $relatedEvents = Event::where('category_id', $categoryId)->latest()->take(3)->get();
+
+        return view('homePages.MyEventStaticPage', compact('event', 'popularEvents', 'relatedEvents'));
+    }
+
+    public function showMyEventsPage()
+    {
+
+        $user = null;
+
+        if (Auth::check()) {
+            $user = Auth::user();
+        }
+
+        $cities = City::all();
+        $categories = Category::all();
+        $userId = Auth::id();
+        $events = Event::with(['category', 'city', 'reservations'])
+            ->where('created_by', $userId)
+            ->get();
+        $eventCount = $events->count();
+        return view('homePages.myEvents', compact('cities','user', 'categories', 'events','eventCount'));
+    }
     /**
      * Update the specified resource in storage.
      */
