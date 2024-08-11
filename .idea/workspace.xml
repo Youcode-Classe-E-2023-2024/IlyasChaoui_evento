@@ -2,34 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="63c2625c-aa74-4be5-98d1-6577e619f40b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/IlyasChaoui_evento/public/assets-home/images/logo/dashboardDarkLogo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IlyasChaoui_evento/public/assets-home/images/logo/dashboardLogo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IlyasChaoui_evento/public/assets-home/js/search.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IlyasChaoui_evento/public/assets/img/emty-items.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IlyasChaoui_evento/resources/views/homePages/MyEventStaticPage.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IlyasChaoui_evento/resources/views/homePages/myEvents.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IlyasChaoui_evento/resources/views/errors/404.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IlyasChaoui_evento/resources/views/homePages/categoryPage.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IlyasChaoui_evento/app/Http/Controllers/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/IlyasChaoui_evento/app/Http/Controllers/CategoryController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IlyasChaoui_evento/app/Http/Controllers/DashboardController.php" beforeDir="false" afterPath="$PROJECT_DIR$/IlyasChaoui_evento/app/Http/Controllers/DashboardController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IlyasChaoui_evento/app/Http/Controllers/EventController.php" beforeDir="false" afterPath="$PROJECT_DIR$/IlyasChaoui_evento/app/Http/Controllers/EventController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IlyasChaoui_evento/app/Http/Controllers/ForgetPasswordController.php" beforeDir="false" afterPath="$PROJECT_DIR$/IlyasChaoui_evento/app/Http/Controllers/ForgetPasswordController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IlyasChaoui_evento/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/IlyasChaoui_evento/app/Http/Controllers/HomeController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IlyasChaoui_evento/app/Http/Controllers/ReservationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/IlyasChaoui_evento/app/Http/Controllers/ReservationController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IlyasChaoui_evento/app/Models/Event.php" beforeDir="false" afterPath="$PROJECT_DIR$/IlyasChaoui_evento/app/Models/Event.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IlyasChaoui_evento/app/Models/Reservation.php" beforeDir="false" afterPath="$PROJECT_DIR$/IlyasChaoui_evento/app/Models/Reservation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IlyasChaoui_evento/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/IlyasChaoui_evento/app/Http/Controllers/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IlyasChaoui_evento/database/seeders/AdminSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/IlyasChaoui_evento/database/seeders/AdminSeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IlyasChaoui_evento/public/assets-home/css/button.css" beforeDir="false" afterPath="$PROJECT_DIR$/IlyasChaoui_evento/public/assets-home/css/button.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IlyasChaoui_evento/public/assets-home/css/cards.css" beforeDir="false" afterPath="$PROJECT_DIR$/IlyasChaoui_evento/public/assets-home/css/cards.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IlyasChaoui_evento/public/assets-home/images/logo/darkLogo.png" beforeDir="false" afterPath="$PROJECT_DIR$/IlyasChaoui_evento/public/assets-home/images/logo/darkLogo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IlyasChaoui_evento/public/assets-home/images/logo/homeLogo.png" beforeDir="false" afterPath="$PROJECT_DIR$/IlyasChaoui_evento/public/assets-home/images/logo/homeLogo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IlyasChaoui_evento/resources/views/Layouts/dashboardLayout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/IlyasChaoui_evento/resources/views/Layouts/dashboardLayout.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IlyasChaoui_evento/resources/views/Layouts/homeLayout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/IlyasChaoui_evento/resources/views/Layouts/homeLayout.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IlyasChaoui_evento/resources/views/components/cards/chart.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/IlyasChaoui_evento/resources/views/components/cards/chart.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IlyasChaoui_evento/resources/views/components/cards/event-cards.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/IlyasChaoui_evento/resources/views/components/cards/event-cards.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IlyasChaoui_evento/resources/views/components/dashboard-pages/category-section.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/IlyasChaoui_evento/resources/views/components/dashboard-pages/category-section.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IlyasChaoui_evento/resources/views/components/dashboard-pages/event-section.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/IlyasChaoui_evento/resources/views/components/dashboard-pages/event-section.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IlyasChaoui_evento/resources/views/components/dashboard-pages/static-section.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/IlyasChaoui_evento/resources/views/components/dashboard-pages/static-section.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IlyasChaoui_evento/resources/views/Reserve/ticket.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/IlyasChaoui_evento/resources/views/Reserve/ticket.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IlyasChaoui_evento/resources/views/components/navbar/authentication-navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/IlyasChaoui_evento/resources/views/components/navbar/authentication-navbar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IlyasChaoui_evento/resources/views/components/navbar/back-up-navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/IlyasChaoui_evento/resources/views/components/navbar/back-up-navbar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IlyasChaoui_evento/resources/views/components/navbar/dashboard-navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/IlyasChaoui_evento/resources/views/components/navbar/dashboard-navbar.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IlyasChaoui_evento/resources/views/components/navbar/home-navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/IlyasChaoui_evento/resources/views/components/navbar/home-navbar.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IlyasChaoui_evento/resources/views/components/popup/event-create-popup.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/IlyasChaoui_evento/resources/views/components/popup/event-create-popup.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IlyasChaoui_evento/resources/views/components/sidebar/dashboard-sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/IlyasChaoui_evento/resources/views/components/sidebar/dashboard-sidebar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IlyasChaoui_evento/resources/views/components/tables/category-table.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/IlyasChaoui_evento/resources/views/components/tables/category-table.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IlyasChaoui_evento/resources/views/components/popup/show-request-pop-up.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/IlyasChaoui_evento/resources/views/components/popup/show-request-pop-up.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IlyasChaoui_evento/resources/views/components/sidebar/settings-sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/IlyasChaoui_evento/resources/views/components/sidebar/settings-sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IlyasChaoui_evento/resources/views/homePage.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/IlyasChaoui_evento/resources/views/homePage.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IlyasChaoui_evento/resources/views/homePages/contentPage.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/IlyasChaoui_evento/resources/views/homePages/contentPage.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IlyasChaoui_evento/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/IlyasChaoui_evento/routes/web.php" afterDir="false" />
     </list>
@@ -190,18 +184,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/xampp/htdocs/Laravel project/IlyasChaoui_evento/IlyasChaoui_evento/public/assets/img&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/xampp/htdocs/Laravel project/IlyasChaoui-NewsLatter",
+    "list.type.of.created.stylesheet": "CSS",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\Laravel project\IlyasChaoui_evento\IlyasChaoui_evento\public\assets\img" />
@@ -211,11 +205,11 @@
       <recent name="C:\xampp\htdocs\Laravel project\IlyasChaoui_evento\IlyasChaoui_evento\public\assets\images\header" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\Laravel project\IlyasChaoui_evento\IlyasChaoui_evento\resources\views\components\popup" />
       <recent name="C:\xampp\htdocs\Laravel project\IlyasChaoui_evento\IlyasChaoui_evento\resources\views\components\cards" />
-      <recent name="C:\xampp\htdocs\Laravel project\IlyasChaoui_evento\IlyasChaoui_evento\resources\views\components\navbar" />
-      <recent name="C:\xampp\htdocs\Laravel project\IlyasChaoui_evento\IlyasChaoui_evento\resources\views\components\footer" />
-      <recent name="C:\xampp\htdocs\Laravel project\IlyasChaoui_evento\IlyasChaoui_evento\resources\views\components\sidebar" />
+      <recent name="C:\xampp\htdocs\Laravel project\IlyasChaoui_evento\IlyasChaoui_evento\resources\views\errors" />
+      <recent name="C:\xampp\htdocs\Laravel project\IlyasChaoui_evento\IlyasChaoui_evento\resources\views" />
+      <recent name="C:\xampp\htdocs\Laravel project\IlyasChaoui_evento\IlyasChaoui_evento\resources\views\homePages" />
+      <recent name="C:\xampp\htdocs\Laravel project\IlyasChaoui_evento\IlyasChaoui_evento\resources\views\components\popup" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -234,6 +228,10 @@
       <workItem from="1710020939410" duration="8651000" />
       <workItem from="1710029697901" duration="13787000" />
       <workItem from="1710099495252" duration="7162000" />
+      <workItem from="1710148819672" duration="24456000" />
+      <workItem from="1710242695602" duration="6738000" />
+      <workItem from="1710259214766" duration="2199000" />
+      <workItem from="1710425715773" duration="29000" />
     </task>
     <servers />
   </component>

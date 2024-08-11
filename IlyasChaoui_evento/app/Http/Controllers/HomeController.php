@@ -13,7 +13,7 @@ class HomeController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function showHomePage()
     {
         $user = null;
 
@@ -21,11 +21,12 @@ class HomeController extends Controller
             $user = Auth::user();
         }
 
+        $eventCount = Event::where('status',1)->count();
         $cities = City::all();
         $categories = Category::all();
         $events = Event::with(['category', 'city', 'reservations'])
             ->where('status', '1')->get();
-        return view('homePage', compact('user', 'cities', 'categories', 'events'));
+        return view('homePage', compact('user', 'cities', 'categories', 'events','eventCount'));
     }
 
     /**
@@ -41,21 +42,26 @@ class HomeController extends Controller
      */
     public function showContentPage($id, $categoryId)
     {
+        $cities = City::all();
+        $categories = Category::all();
         $event = Event::find($id);
         $popularEvents = Event::latest()->take(3)->get();
         $relatedEvents = Event::where('category_id', $categoryId)->latest()->take(3)->get();
-        return view('homePages.contentPage', compact('event', 'popularEvents', 'relatedEvents'));
+        return view('homePages.contentPage', compact('event', 'popularEvents', 'relatedEvents','cities','categories'));
     }
 
     public function showMyEventStaticPage($id, $categoryId)
     {
+
+        $cities = City::all();
+        $categories = Category::all();
         $event = Event::with(['reservations', 'reservers'])
             ->find($id);
 
         $popularEvents = Event::latest()->take(3)->get();
         $relatedEvents = Event::where('category_id', $categoryId)->latest()->take(3)->get();
 
-        return view('homePages.MyEventStaticPage', compact('event', 'popularEvents', 'relatedEvents'));
+        return view('homePages.MyEventStaticPage', compact('event', 'popularEvents', 'relatedEvents','cities','categories'));
     }
 
     public function showMyEventsPage()

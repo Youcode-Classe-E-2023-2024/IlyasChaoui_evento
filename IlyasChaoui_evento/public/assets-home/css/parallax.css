@@ -60,7 +60,7 @@ a {
 }
 
 .sky {
-    background-repeat:  no-repeat ;
+    background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     transform: translateZ(-600px) scale(3);
@@ -68,7 +68,7 @@ a {
 }
 
 .bushes {
-    background-repeat:  no-repeat ;
+    background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     transform: translateZ(-525px) scale(2.75);
@@ -76,35 +76,33 @@ a {
 }
 
 .water {
-    background-repeat:  no-repeat ;
+    background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
 .people1 {
-    background-repeat:  no-repeat ;
+    background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
 .people2 {
-    background-repeat:  no-repeat ;
+    background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
 .people3 {
-    background-repeat:  no-repeat ;
+    background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
 .hero-text {
-    background: linear-gradient(
-        rgba(105, 211, 252, 0.25) 0%,
-        rgba(255, 116, 161, 0.25) 86%,
-        rgba(1, 0, 0, 0.25) 100%
-    );
+    background: linear-gradient(rgba(105, 211, 252, 0.25) 0%,
+            rgba(255, 116, 161, 0.25) 86%,
+            rgba(1, 0, 0, 0.25) 100%);
     background-size: cover;
     transform: translateZ(0) scale(1);
     z-index: 7;
@@ -152,31 +150,33 @@ a {
 }
 
 .year-container h1:nth-of-type(1) {
-    bottom: 40%;
-    right: 120%;
+    bottom: 60%;
+    right: 130%;
 }
 
 .year-container h1:nth-of-type(2) {
-    right: 90%;
-    bottom: 50%;
+    right: 80%;
+    bottom: 60%;
 }
 
 .year-container h1:nth-of-type(3) {
-    bottom: 40%;
-    right: 60%;
+    bottom: 60%;
+    right: 25%;
 }
 
 .year-container h1:nth-of-type(4) {
-    right: 50%;
-    bottom: 40%;
+    right: 10%;
+    bottom: 60%;
 }
+
 .year-container h1:nth-of-type(5) {
-    right: 7%;
-    bottom: 40%;
+    right: -40%;
+    bottom: 60%;
 }
+
 .year-container h1:nth-of-type(6) {
-    left: 65%;
-    bottom: 50%;
+    right: -90%;
+    bottom: 60%;
 }
 
 
@@ -198,21 +198,21 @@ a {
 
 .soon-container h1:nth-of-type(1) {
     top: 30%;
-    right: 105%;
+    right: 85%;
 }
 
 .soon-container h1:nth-of-type(2) {
-    right: 60%;
+    right: 30%;
     top: 30%;
 }
 
 .soon-container h1:nth-of-type(3) {
     top: 30%;
-    right: 30%;
+    right: 0%;
 }
 
 .soon-container h1:nth-of-type(4) {
-    left: 60%;
+    left: 100%;
     top: 30%;
 }
 
@@ -290,6 +290,7 @@ a {
 }
 
 @media (min-width: 1126px) {
+
     .sky,
     .bushes,
     .water,

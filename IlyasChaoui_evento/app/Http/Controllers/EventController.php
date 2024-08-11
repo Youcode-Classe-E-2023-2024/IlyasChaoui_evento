@@ -28,7 +28,7 @@ class EventController extends Controller
     {
         // Validate incoming data
         $validatedData = $request->validate([
-            'eventPicture' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048',
+            'eventPicture' => 'required|image|mimes:jpeg,png,jpg,gif',
             'title' => 'required|string',
             'price' => 'required|integer',
             'city_id' => 'required|exists:cities,id',
@@ -37,7 +37,6 @@ class EventController extends Controller
             'deadline' => 'required|date',
             'description' => 'required|string',
         ]);
-
         // Get the authenticated user
         $user = Auth::user();
 
@@ -135,7 +134,6 @@ class EventController extends Controller
             'deadline' => 'required|date',
             'description' => 'required|string',
         ]);
-
         $event = Event::findOrFail($id);
         // Update the event with the new data
         $user = Auth::user();
@@ -155,7 +153,6 @@ class EventController extends Controller
 
         // Redirect or return a response
         return redirect()->route('myEvents.page')->with('success', 'Event updated successfully.');
-
     }
 
     /**

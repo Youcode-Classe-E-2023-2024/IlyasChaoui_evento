@@ -4,7 +4,6 @@
     Home
 @endsection
 @section('content')
-
     <!-- ====== Hero Section Start -->
     <div id="home" class="relative h-full overflow-x-auto fixed pt-[120px] md:pt-[130px] lg:pt-[160px]">
         <div class="container">
@@ -55,9 +54,9 @@
     <!-- ====== Blog Section Start -->
 
     <section class="bg-gray-200 pb-10 pt-20 dark:bg-dark lg:pb-20 lg:pt-[120px]">
-        @auth
+        @role('organiser')
             <x-popup.event-create-popup :user="$user" :cities="$cities" :categories="$categories" />
-        @endauth
+        @endrole
         <div class="container mx-auto">
             <div class="-mx-4 flex flex-wrap justify-center">
                 <div class="w-full px-4">
@@ -67,12 +66,18 @@
                             class="mb-4 text-3xl font-bold text-dark dark:text-white sm:text-4xl md:text-[40px] md:leading-[1.2]">
                             The Events
                         </h2>
-
                     </div>
                 </div>
             </div>
-
-            <x-cards.event-cards :events="$events" />
+            @if ($eventCount == 0)
+                <div class="flex flex-col mb-20 justify-center items-center">
+                    <img src="{{ asset('./assets/img/emty-items.png') }}" class="w-[500px]" alt="">
+                    <p class="text-xl font-bold absolute text-black dark:text-white" style="margin-top: 219px;">Oops...There
+                        is no event now</p>
+                </div>
+            @else
+                <x-cards.event-cards :events="$events" />
+            @endif
 
         </div>
 
@@ -382,7 +387,7 @@
     <!-- ====== FAQ Section End -->
     <!-- ====== Contact Start ====== -->
     <section id="contact" class="relative py-20 md:py-[120px]">
-        <div class="absolute left-0 top-0 -z-[1] h-full w-full dark:bg-dark"></div>
+        <div class="absolute left-0 top-0 -z-[1] h-full w-full bg-white dark:bg-dark"></div>
         <div class="absolute left-0 top-0 -z-[1] h-1/2 w-full bg-[#E9F9FF] dark:bg-dark-700 lg:h-[45%] xl:h-1/2"></div>
         <div class="container px-4">
             <div class="-mx-4 flex flex-wrap items-center">
@@ -411,7 +416,7 @@
                                         Our Location
                                     </h5>
                                     <p class="text-base text-body-color dark:text-dark-6">
-                                        401 Broadway, 24th Floor, Orchard Cloud View, London
+                                        401 Center, Safi, Morocco
                                     </p>
                                 </div>
                             </div>
@@ -427,10 +432,10 @@
                                         How Can We Help?
                                     </h5>
                                     <p class="text-base text-body-color dark:text-dark-6">
-                                        info@yourdomain.com
+                                        info@Youcode.com
                                     </p>
                                     <p class="mt-1 text-base text-body-color dark:text-dark-6">
-                                        contact@yourdomain.com
+                                        contact@Youcode.com
                                     </p>
                                 </div>
                             </div>
@@ -448,19 +453,19 @@
                             <div class="mb-[22px]">
                                 <label for="fullName" class="mb-4 block text-sm text-body-color dark:text-dark-6">Full
                                     Name*</label>
-                                <input type="text" name="fullName" placeholder="Adam Gelius"
+                                <input type="text" name="fullName" placeholder="Ilyas Chaoui"
                                     class="w-full border-0 border-b border-[#f1f1f1] bg-transparent pb-3 text-body-color placeholder:text-body-color/60 focus:border-primary focus:outline-none dark:border-dark-3 dark:text-dark-6" />
                             </div>
                             <div class="mb-[22px]">
                                 <label for="email"
                                     class="mb-4 block text-sm text-body-color dark:text-dark-6">Email*</label>
-                                <input type="email" name="email" placeholder="example@yourmail.com"
+                                <input type="email" name="email" placeholder="example@youcode.com"
                                     class="w-full border-0 border-b border-[#f1f1f1] bg-transparent pb-3 text-body-color placeholder:text-body-color/60 focus:border-primary focus:outline-none dark:border-dark-3 dark:text-dark-6" />
                             </div>
                             <div class="mb-[22px]">
                                 <label for="phone"
                                     class="mb-4 block text-sm text-body-color dark:text-dark-6">Phone*</label>
-                                <input type="text" name="phone" placeholder="+885 1254 5211 552"
+                                <input type="text" name="phone" placeholder="+212 00000000"
                                     class="w-full border-0 border-b border-[#f1f1f1] bg-transparent pb-3 text-body-color placeholder:text-body-color/60 focus:border-primary focus:outline-none dark:border-dark-3 dark:text-dark-6" />
                             </div>
                             <div class="mb-[30px]">
@@ -482,36 +487,4 @@
         </div>
     </section>
     <!-- ====== Contact End ====== -->
-
-    <!-- ====== Brands Section Start -->
-    <section class="pb-20 dark:bg-dark">
-        <div class="container px-4">
-            <div class="-mx-4 flex flex-wrap items-center justify-center gap-8 xl:gap-11">
-                <a href="https://graygrids.com/">
-                    <img src="./assets-home/images/brands/graygrids.svg" alt="graygrids" class="dark:hidden" />
-                    <img src="./assets-home/images/brands/graygrids-white.svg" alt="graygrids"
-                        class="hidden dark:block" />
-                </a>
-                <a href="https://lineicons.com/">
-                    <img src="./assets-home/images/brands/lineicons.svg" alt="lineicons" class="dark:hidden" />
-                    <img src="./assets-home/images/brands/lineicons-white.svg" alt="graygrids"
-                        class="hidden dark:block" />
-                </a>
-                <a href="https://uideck.com/">
-                    <img src="./assets-home/images/brands/uideck.svg" alt="uideck" class="dark:hidden" />
-                    <img src="./assets-home/images/brands/uideck-white.svg" alt="graygrids" class="hidden dark:block" />
-                </a>
-                <a href="https://ayroui.com/">
-                    <img src="./assets-home/images/brands/ayroui.svg" alt="ayroui" class="dark:hidden" />
-                    <img src="./assets-home/images/brands/ayroui-white.svg" alt="graygrids" class="hidden dark:block" />
-                </a>
-                <a href="https://tailgrids.com/">
-                    <img src="./assets-home/images/brands/tailgrids.svg" alt="tailgrids" class="dark:hidden" />
-                    <img src="./assets-home/images/brands/tailgrids-white.svg" alt="graygrids"
-                        class="hidden dark:block" />
-                </a>
-            </div>
-        </div>
-    </section>
-    <!-- ====== Brands Section End -->
 @endsection

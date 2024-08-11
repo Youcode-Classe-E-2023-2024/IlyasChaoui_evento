@@ -1,5 +1,6 @@
  <div class="w-full h-48 pt-8 mb-20 mt-10 lg:mb-0 lg:flex-none">
-     <div class="relative flex flex-col min-w-0 break-words bg-white shadow-soft-xl rounded-2xl bg-clip-border">
+     <div
+         class="relative flex flex-col min-w-0 break-words bg-white dark:bg-slate-850 shadow-soft-xl rounded-2xl bg-clip-border">
          <div class="flex-auto p-4">
              <canvas id="reservationChart" class="w-full h-full" height="150"></canvas>
          </div>

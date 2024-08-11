@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Category;
+use App\Models\City;
 use App\Models\Event;
 use App\Models\User;
 use Illuminate\Http\Request;
@@ -13,7 +14,7 @@ class CategoryController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function showCategory()
     {
         $events = Event::all();
         $eventNames = $events->pluck('name')->toArray();
@@ -71,6 +72,21 @@ class CategoryController extends Controller
         $category->save();
 
         return redirect('/category')->with('success', 'Category updated successfully');
+    }
+
+    public function showEventByCategory($categoryId)
+    {
+        $cities = City::all();
+        $categories = Category::all();
+        // Find the category by ID
+        $category = Category::findOrFail($categoryId);
+
+        // Retrieve events belonging to the specified category
+        $events = Event::where('category_id', $categoryId)
+            ->latest()
+            ->paginate(5);
+        $eventCount = $events->count();
+        return view('homePages.categoryPage', compact('category', 'events','eventCount','cities','categories'));
     }
 
     /**

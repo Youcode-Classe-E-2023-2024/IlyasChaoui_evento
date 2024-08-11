@@ -48,7 +48,7 @@
                 </div>
                 <div class="w-full max-w-xs mx-auto">
 
-                    <form class="max-w-sm mx-auto flex flex-col" action="{{ route('change.role') }}" method="post">
+                    <form class="max-w-sm mx-auto flex flex-col" action="{{ route('update.role') }}" method="post">
                         <label for="underline_select" class="sr-only">Underline select</label>
                         @foreach($data['user'] as $user)
                             <div class="flex w-full justify-between flex-row">

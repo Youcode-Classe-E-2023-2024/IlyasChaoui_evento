@@ -14,7 +14,8 @@
     <!-- component -->
 
     <div class="relative py-3 mt-96 w-full flex justify-center items-center sm:mx-auto">
-        <div class="relative px-4 py-10 bg-gray-200 dark:bg-slate-900 mx-8 md:mx-0 shadow rounded-xl sm:p-10" style="width: fit-content">
+        <div class="relative px-4 py-10 bg-gray-200 dark:bg-slate-900 mx-8 md:mx-0 shadow rounded-xl sm:p-10"
+             style="width: fit-content">
             <div class="max-w-1/2 mx-auto">
                 <button type="button"
                         class="text-gray-400 absolute right-0 top-0 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
@@ -54,7 +55,7 @@
                         <div x-data="{ photoName: null, photoPreview: null }"
                              class="col-span-6 ml-2 sm:col-span-4 md:mr-3">
                             <!-- Photo File Input -->
-                            <input type="file" name="eventPicture" class="hidden" x-ref="photo"
+                            <input type="file" name="eventPicture" class="hidden" x-ref="photo" value="{{ old('eventPicture') }}"
                                    x-on:change="
                         photoName = $refs.photo.files[0].name;
                         const reader = new FileReader();
@@ -62,6 +63,7 @@
                             photoPreview = e.target.result;
                         };
                         reader.readAsDataURL($refs.photo.files[0]);">
+
 
                             <label class="block text-gray-700 text-sm font-bold mb-2 text-center" for="photo">
                                 Event Photo <span class="text-red-600"> </span>
@@ -87,30 +89,78 @@
                                         x-on:click.prevent="$refs.photo.click()">
                                     Select New Photo
                                 </button>
+                                @error('eventPicture')
+                                <div
+                                    class="alert fade mb-4 alert-simple alert-danger alert-dismissible text-left font__family-montserrat font__size-16 font__weight-light brk-library-rendered rendered show"
+                                    role="alert">
+                                    <button type="button" class="close font__size-18" data-dismiss="alert">
+                                        <span aria-hidden="true"><i class="fa fa-times danger"></i></span>
+                                        <span class="sr-only">Close</span>
+                                    </button>
+                                    <i class="start-icon far fa-times-circle faa-pulse animated"></i>
+                                    <strong class="text-red-500">{{ $message }}</strong>
+                                </div>
+                                @enderror
                             </div>
                         </div>
                         <div class="flex flex-wrap items-center justify-between space-x-4">
                             <div class="flex flex-col">
                                 <label class="leading-loose">Event Title</label>
-                                <input type="text" name="title"
+                                <input type="text" name="title" value="{{ old('title') }}"
                                        class="px-4 py-2 border-2 focus:ring-gray-500 focus:border-gray-900 w-full sm:text-sm border-gray-900 rounded-md focus:outline-none text-gray-600"
                                        placeholder="Optional">
+                                @error('title')
+                                <div
+                                    class="alert fade mb-4 alert-simple alert-danger alert-dismissible text-left font__family-montserrat font__size-16 font__weight-light brk-library-rendered rendered show"
+                                    role="alert">
+                                    <button type="button" class="close font__size-18" data-dismiss="alert">
+                                        <span aria-hidden="true"><i class="fa fa-times danger"></i></span>
+                                        <span class="sr-only">Close</span>
+                                    </button>
+                                    <i class="start-icon far fa-times-circle faa-pulse animated"></i>
+                                    <strong class="text-red-500">{{ $message }}</strong>
+                                </div>
+                                @enderror
                             </div>
                             <div class="flex flex-col">
                                 <label class="leading-loose">Event Price</label>
-                                <input type="text" name="price"
+                                <input type="text" name="price" value="{{ old('price') }}"
                                        class="px-4 py-2 border focus:ring-gray-500 focus:border-gray-900 w-full sm:text-sm border-gray-300 rounded-md focus:outline-none text-gray-600"
                                        placeholder="Optional">
+                                @error('price')
+                                <div
+                                    class="alert fade mb-4 alert-simple alert-danger alert-dismissible text-left font__family-montserrat font__size-16 font__weight-light brk-library-rendered rendered show"
+                                    role="alert">
+                                    <button type="button" class="close font__size-18" data-dismiss="alert">
+                                        <span aria-hidden="true"><i class="fa fa-times danger"></i></span>
+                                        <span class="sr-only">Close</span>
+                                    </button>
+                                    <i class="start-icon far fa-times-circle faa-pulse animated"></i>
+                                    <strong class="text-red-500">{{ $message }}</strong>
+                                </div>
+                                @enderror
                             </div>
                             <div class="flex flex-col">
                                 <label class="leading-loose">Event City</label>
                                 <select name="city_id"
                                         class=" px-5 py-3 text-base transition bg-transparent border rounded-md outline-none border-stroke dark:border-dark-3 text-body-color dark:text-dark-6 placeholder:text-dark-6 focus:border-primary dark:focus:border-primary focus-visible:shadow-none w-full">
-                                    <option value="" disabled selected>Select your Category</option>
+                                    <option value="" disabled>Select your Category</option>
                                     @foreach ($cities as $city)
                                         <option value="{{ $city->id }}">{{ $city->City }}</option>
                                     @endforeach
                                 </select>
+                                @error('city_id')
+                                <div
+                                    class="alert fade mb-4 alert-simple alert-danger alert-dismissible text-left font__family-montserrat font__size-16 font__weight-light brk-library-rendered rendered show"
+                                    role="alert">
+                                    <button type="button" class="close font__size-18" data-dismiss="alert">
+                                        <span aria-hidden="true"><i class="fa fa-times danger"></i></span>
+                                        <span class="sr-only">Close</span>
+                                    </button>
+                                    <i class="start-icon far fa-times-circle faa-pulse animated"></i>
+                                    <strong class="text-red-500">{{ $message }}</strong>
+                                </div>
+                                @enderror
                             </div>
                         </div>
                         <div class="flex flex-wrap justify-between space-x-4">
@@ -118,18 +168,42 @@
                                 <label class="leading-loose">Event Category</label>
                                 <select name="category_id"
                                         class=" px-5 py-3 text-base transition bg-transparent border rounded-md outline-none border-stroke dark:border-dark-3 text-body-color dark:text-dark-6 placeholder:text-dark-6 focus:border-primary dark:focus:border-primary focus-visible:shadow-none w-full">
-                                    <option value="" disabled selected>Select your City</option>
+                                    <option value="" disabled>Select your City</option>
                                     @foreach ($categories as $category)
                                         <option value="{{ $category->id }}">{{ $category->name }}</option>
                                     @endforeach
                                 </select>
+                                @error('category_id')
+                                <div
+                                    class="alert fade mb-4 alert-simple alert-danger alert-dismissible text-left font__family-montserrat font__size-16 font__weight-light brk-library-rendered rendered show"
+                                    role="alert">
+                                    <button type="button" class="close font__size-18" data-dismiss="alert">
+                                        <span aria-hidden="true"><i class="fa fa-times danger"></i></span>
+                                        <span class="sr-only">Close</span>
+                                    </button>
+                                    <i class="start-icon far fa-times-circle faa-pulse animated"></i>
+                                    <strong class="text-red-500">{{ $message }}</strong>
+                                </div>
+                                @enderror
                             </div>
                             <div class="flex flex-col">
                                 <label class="leading-loose">Place Number</label>
                                 <div class="relative focus-within:text-gray-600 text-gray-400">
-                                    <input type="number" name="placeNumber"
+                                    <input type="number" name="placeNumber" value="{{ old('placeNumber') }}"
                                            class="pr-4 pl-10 py-2 border focus:ring-gray-500 focus:border-gray-900 w-full sm:text-sm border-gray-300 rounded-md focus:outline-none text-gray-600"
                                            placeholder="100">
+                                    @error('placeNumber')
+                                    <div
+                                        class="alert fade mb-4 alert-simple alert-danger alert-dismissible text-left font__family-montserrat font__size-16 font__weight-light brk-library-rendered rendered show"
+                                        role="alert">
+                                        <button type="button" class="close font__size-18" data-dismiss="alert">
+                                            <span aria-hidden="true"><i class="fa fa-times danger"></i></span>
+                                            <span class="sr-only">Close</span>
+                                        </button>
+                                        <i class="start-icon far fa-times-circle faa-pulse animated"></i>
+                                        <strong class="text-red-500">{{ $message }}</strong>
+                                    </div>
+                                    @enderror
                                     <div class="absolute left-3 top-2">
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="h-6 w-6"
                                              fill="currentColor">
@@ -145,9 +219,21 @@
                             <div class="flex flex-col">
                                 <label class="leading-loose">Event Date</label>
                                 <div class="relative focus-within:text-gray-600 text-gray-400">
-                                    <input type="date" name="deadline"
+                                    <input type="date" name="deadline" value="{{ old('deadline') }}"
                                            class="pr-4 pl-10 py-2 border focus:ring-gray-500 focus:border-gray-900 w-full sm:text-sm border-gray-300 rounded-md focus:outline-none text-gray-600"
                                            placeholder="26/02/2020">
+                                    @error('deadline')
+                                    <div
+                                        class="alert fade mb-4 alert-simple alert-danger alert-dismissible text-left font__family-montserrat font__size-16 font__weight-light brk-library-rendered rendered show"
+                                        role="alert">
+                                        <button type="button" class="close font__size-18" data-dismiss="alert">
+                                            <span aria-hidden="true"><i class="fa fa-times danger"></i></span>
+                                            <span class="sr-only">Close</span>
+                                        </button>
+                                        <i class="start-icon far fa-times-circle faa-pulse animated"></i>
+                                        <strong class="text-red-500">{{ $message }}</strong>
+                                    </div>
+                                    @enderror
                                     <div class="absolute left-3 top-2">
                                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                                              xmlns="http://www.w3.org/2000/svg">
@@ -161,13 +247,37 @@
                         </div>
                         <div class="flex flex-col">
                             <label class="leading-loose">Event Description</label>
-                            <textarea type="text" name="description"
+                            <textarea type="text" name="description" value="{{ old('description') }}"
                                       class="px-4 py-2 border focus:ring-gray-500 focus:border-gray-900 w-full sm:text-sm border-gray-300 rounded-md focus:outline-none text-gray-600"
                                       placeholder="Optional"></textarea>
+                            @error('description')
+                            <div
+                                class="alert fade mb-4 alert-simple alert-danger alert-dismissible text-left font__family-montserrat font__size-16 font__weight-light brk-library-rendered rendered show"
+                                role="alert">
+                                <button type="button" class="close font__size-18" data-dismiss="alert">
+                                    <span aria-hidden="true"><i class="fa fa-times danger"></i></span>
+                                    <span class="sr-only">Close</span>
+                                </button>
+                                <i class="start-icon far fa-times-circle faa-pulse animated"></i>
+                                <strong class="text-red-500">{{ $message }}</strong>
+                            </div>
+                            @enderror
                         </div>
                         <div class="checkbox-wrapper-35">
-                            <input value="private" name="reservation_type" id="switch" type="checkbox"
+                            <input value="private" name="reservation_type" id="switch" type="checkbox" value="{{ old('reservation_type') }}"
                                    class="switch">
+                            @error('reservation_type')
+                            <div
+                                class="alert fade mb-4 alert-simple alert-danger alert-dismissible text-left font__family-montserrat font__size-16 font__weight-light brk-library-rendered rendered show"
+                                role="alert">
+                                <button type="button" class="close font__size-18" data-dismiss="alert">
+                                    <span aria-hidden="true"><i class="fa fa-times danger"></i></span>
+                                    <span class="sr-only">Close</span>
+                                </button>
+                                <i class="start-icon far fa-times-circle faa-pulse animated"></i>
+                                <strong class="text-red-500">{{ $message }}</strong>
+                            </div>
+                            @enderror
                             <label for="switch">
                                 <span class="switch-x-text">This is </span>
                                 <span class="switch-x-toggletext">

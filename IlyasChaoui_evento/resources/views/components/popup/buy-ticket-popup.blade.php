@@ -5,7 +5,7 @@
 <div id="crud-modal" tabindex="-1" aria-hidden="true"
     class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center rounded-lg items-center w-full md:inset-0  max-h-1/2">
     <div class="bg-white rounded-lg">
-        <div class="absolute left-20">
+        <div class="absolute" style="left: 950px">
             <button type="button"
                 class="text-gray-400 bg-transparent absolute right-0 hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
                 data-modal-toggle="crud-modal">
@@ -36,7 +36,7 @@
                     <input type="hidden" name="acceptation" value="{{ $event->acceptation }}">
                     <input
                         class="mb-3 px-2 py-1.5
-                                                        mb-3 mt-1 block w-full px-2 py-1.5 border border-gray-300 rounded-md text-sm shadow-sm placeholder-gray-400
+                                                        mb-3 mt-1 block w-full px-2 py-1.5 border border-gray-300 text-black rounded-md text-sm shadow-sm placeholder-black
                                                         focus:outline-none
                                                         focus:border-sky-500
                                                         focus:ring-1

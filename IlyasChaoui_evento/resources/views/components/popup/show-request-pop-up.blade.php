@@ -25,7 +25,7 @@
                               d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
                               clip-rule="evenodd"/>
                     </svg>
-                    <h1 class="tracking-wide text-xl text-gray-900">Requests For Your Events
+                    <h1 class="tracking-wide border-b-2 border-blue-500 text-xl text-gray-900">Requests For Your Events
                     </h1>
                 </div>
                 @foreach($event->reservers as $reserver)
@@ -79,6 +79,10 @@
                                 </div>
                             </div>
 
+                        </div>
+                    @else
+                        <div>
+                            <p class="text-dark dark:text-white text-2xl text-center" style="color: black">No Requests Find</p>
                         </div>
                     @endif
                 @endforeach

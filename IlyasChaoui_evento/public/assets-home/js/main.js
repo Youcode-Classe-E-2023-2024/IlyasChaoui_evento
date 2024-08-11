@@ -21,7 +21,7 @@
       } else {
         document.querySelector(".header-logo").src =
           "assets-home/images/logo/homeLogo.png"
-      }
+      } 
     }
 
     if (document.documentElement.classList.contains("dark")) {

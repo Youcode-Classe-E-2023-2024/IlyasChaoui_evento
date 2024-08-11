@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Category;
 use App\Models\City;
+use App\Models\Event;
 use App\Models\User;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Http\Request;
@@ -16,11 +18,24 @@ class UserController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function showRegister()
     {
         $cities = City::all();
-        return view('authentication.authentication', compact('cities'));
+        $categories = Category::all();
+        $events = Event::with(['category', 'city', 'reservations'])
+            ->where('status', '1')->get();
+        return view('authentication.authentication', compact('categories','cities','events'));
     }
+
+    public function showLogin()
+    {
+        $cities = City::all();
+        $categories = Category::all();
+        $events = Event::with(['category', 'city', 'reservations'])
+            ->where('status', '1')->get();
+        return view('authentication.authentication', compact('categories','cities','events'));
+    }
+
 
     /**
      * Store a newly created resource in storage.
@@ -52,7 +67,6 @@ class UserController extends Controller
             'picture' => $picturePath,
             'phoneNumber' => $request->phoneNumber,
             'city_id' => $request->city_id,
-            'role' => $request->role,
             'email' => $request->email,
             'password' => Hash::make($request->password),
         ]);
@@ -92,7 +106,12 @@ class UserController extends Controller
 
         if (Auth::attempt($request->only('email', 'password'))) {
             $request->session()->regenerate();
-            return redirect()->intended('/');
+            $user = Auth::user();
+            if ($user->hasRole('admin')) {
+                return redirect('/static');
+            } else {
+                return redirect()->route('home');
+            }
         }
 
         return back()->withErrors([

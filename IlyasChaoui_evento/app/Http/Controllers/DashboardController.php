@@ -16,7 +16,7 @@ class DashboardController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function showStaticPage()
     {
         $events = Event::all();
         $eventNames = $events->pluck('name')->toArray();

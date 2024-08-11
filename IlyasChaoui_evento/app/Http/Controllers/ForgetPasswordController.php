@@ -14,7 +14,6 @@ class ForgetPasswordController extends Controller
     public function showForgetPasswordForm()
     {
         return view('authentication.authentication');
-
     }
 
     /**
